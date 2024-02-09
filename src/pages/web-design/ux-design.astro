@@ -1,0 +1,90 @@
+---
+import Cta from '../../components/home/Cta-ContactShort.astro';
+import SlotHero from '../../components/home/Slot-PageHero.astro';
+import SectionHeadImg from "../../components/home/slot-img.astro";
+import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
+import Process from '../../components/home/Section-Process.astro';
+import FirstProcess from '../../components/home/Process-Sml.astro';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  description="For over 6 years we have specialised in UX-focused web design. Promoting user experience design choices to improve monthly sales. Highly branded website design that doesn't sacrifice on user experience is the fastest way for small businesses to become memorable brands in our opinion."
+  title="UX Design · Aidxn"
+>
+
+    <SlotHero>
+      <Fragment slot="smltitle">
+        Gold Coast User Experience Design
+      </Fragment>
+      <Fragment slot="title">
+        UX-Focused Web Design.
+      </Fragment>
+      <Fragment slot="desc">
+        For over 6 years we have specialised in UX-focused web design. Promoting user experience design choices to improve monthly sales. Highly branded website design that doesn't sacrifice on user experience is the fastest way for small businesses to become memorable brands in our opinion.
+      </Fragment>
+    </SlotHero>
+
+    <FirstProcess />
+
+          <SectionHeadImg>
+            <Fragment slot="smltitle">
+              Lead generation optimisation through UX.
+            </Fragment>
+            <Fragment slot="title">
+              Sell more online everyday.
+            </Fragment>
+            <Fragment slot="desc">
+              In the digital landscape, lead generation is the lifeblood of your business. My lead generation optimisation tactics are designed to capture and nurture leads effectively. Whether it's through compelling calls to action or seamless user journeys, I'll create a web design that powers your lead generation efforts. Elevate your business with my expertise in UX design.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                src="/works/ax-sqr-br-render.webp"
+                class="w-full"
+                alt="Website design on the Gold Coast that focused on User Experience. Improving sales and conversion rate through design choices. Easy to use and understand websites that sell."
+              />
+            </Fragment>
+          </SectionHeadImg>
+
+          <SectionHeadSecImg>
+            <Fragment slot="smltitle">
+              Revolutionizing Conversion Rate Optimisation
+            </Fragment>
+            <Fragment slot="title">
+              An expert in improving funnel conversion rate.
+            </Fragment>
+            <Fragment slot="desc">
+              In the realm of web design, conversion rate optimisation (CRO) is where I shine. I'm here to tell you that a visually stunning website is only part of the equation. With CRO techniques, I systematically improve your website's ability to turn visitors into loyal customers. Through data-driven insights, A/B testing, and a deep understanding of user behavior, I can boost your website's performance to reach new heights.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/ax-sqr-interactive.webp"
+                        class="w-full"
+                        alt="Improve marketing results across the board by improving your website sales funnel. We think of each step in the sales and conversion process for your customer. Improving lead generation and sales from your website."
+                      />
+            </Fragment>
+          </SectionHeadSecImg>
+
+          <SectionHeadImg>
+            <Fragment slot="smltitle">
+              UX web design that improves your bottom line
+            </Fragment>
+            <Fragment slot="title">
+              Cutting-edge UX web design practices.
+            </Fragment>
+            <Fragment slot="desc">
+              I have always been passionate about crafting the perfect user experience through my UX web design expertise. I understand that the success of your website depends on how seamlessly it guides your visitors. My approach not only enhances your website's aesthetics but also focuses on the user journey and satisfaction. If you want to transform your website into a user-friendly, conversion-driven powerhouse, you've come to the right place.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/ax-sqr-snacks.webp"
+                        class="w-full"
+                        alt="Website design for lead generation in the photography and videography industry. High performance website designs for photographers that don't cost a dime. Save money and time with a website design from Aidxn web design."
+                      />
+            </Fragment>
+          </SectionHeadImg>
+  
+  <Process />
+  <Cta />
+
+</Layout>

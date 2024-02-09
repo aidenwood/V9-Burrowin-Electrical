@@ -1,0 +1,72 @@
+---
+const services = [
+  {
+    step: '05',
+    name: 'Local SEO',
+    description:
+      'Search Engine Optimisation strategies specifically for optimising your local customer lead generation as soon as possible. Improve impressions in Google Maps.',
+    link: '/digital-marketing/local-seo',
+    linktxt: 'More info',
+  },
+  {
+    step: '06',
+    name: 'Keyword Research',
+    description:
+      'Keyword research is a great way to create successful ad campaigns. Helping generate more results from all sources through organic score improvement.',
+    link: '/digital-marketing/keyword-research',
+    linktxt: 'More info',
+  },
+  {
+    step: '07',
+    name: 'Competitor Research',
+    description:
+      'Understand the design systems your customers are expecting and implement what looks the most professional across your industry with competitor research.',
+    link: '/digital-marketing/competitor-research',
+    linktxt: 'More info',
+  },
+  {
+    step: '08',
+    name: 'Conversion Optimisation',
+    description:
+      'Breaking down your entire marketing funnel into numeric results to understand exactly where you are losing customers and why. Then applying the necessary fixes.',
+    link: '/digital-marketing/conversion-optimisation',
+    linktxt: 'More info',
+  },
+];
+---
+
+<section class="my-28">
+  <div id="contain" class="mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-4">
+      <h4 class="text-center text-base lg:text-lg uppercase font-thin tracking-widest">More Marketing Services</h4>
+      <div class="grid gap-6 lg:gap-8 grid-cols-1 md:grid-cols-2">
+        {
+          services.map((service) => (
+          <div>
+            <a rel="canonical" href={service.link}>
+              <div class="border-primary-900/10 dark:border-primary-300/10 hover:bg-primary-900/10 hover:dark:bg-primary-300/10 duration-200 rounded-3xl border px-4 py-8 md:px-6 md:py-12 h-full flex flex-col justify-center gap-4">
+                
+                <div class="cursor-pointer flex flex-col">
+                  <p class="text-sm">{service.step}</p>
+                  <h3 class="text-xl font-medium tracking-tight my-4">{service.name}</h3>
+                  <p class="inline-block text-primary-950/80 dark:text-primary-200/80 text-base xs:text-lg">
+                    {service.description}
+                  </p>
+                  <div>
+                    <a
+                      href={service.link}
+                      class="sm:hidden md:inline-block mt-8 mr-2 bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                    >
+                      {service.linktxt}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,171 @@
+---
+import Cta from '../components/home/Cta-ContactShort.astro';
+import Options from '../components/brand-strategy/Options.astro';
+import Hero from '../components/home/Slot-HeroFullscreen.astro';
+import IntroSec from '../components/brand-strategy/Intro-Webdesign-Sec.astro';
+import OptionsSec from '../components/brand-strategy/Options-Secondary.astro';
+import Grid from '../components/brand-strategy/Grid-Webdesign.astro';
+import GridSec from '../components/brand-strategy/Grid-Webdesign-Sec.astro';
+import IndentInfo from '../components/home/Slot-Indent-Info.astro';
+import Faq from '../components/brand-strategy/Faq.astro';
+import SectionHeadImg from "../components/home/slot-img.astro";
+import SectionHeadSecImg from "../components/home/slot-img-rev.astro";
+import BlogPosts from '../components/home/BlogPosts.astro';
+import FirstProcess from '../components/home/Section-Process.astro';
+
+import Layout from '../layouts/Layout.astro';
+
+let backgroundUrl = 'url(/works/billboard-design.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+---
+
+<Layout
+  description="Graphic design and brand strategy development for the age of e-commerce. Graphic design for print and digital. 3D design for video and product development."
+  title="Graphic Design · Aidxn"
+>
+  
+<Hero backgroundUrl={backgroundUrl}>
+  <Fragment slot="smltitle">
+    Brand Strategy & Graphic Design
+  </Fragment>
+  <Fragment slot="title">
+    Improve Sales Through Design
+  </Fragment>
+  <Fragment slot="desc">
+    Creating industry leading brands through design choices.
+    Working with local businesses and nation-wide brands to create brand runways that can't be missed.
+  </Fragment>
+</Hero>
+
+
+<Options />
+
+
+<SectionHeadImg>
+  <Fragment slot="smltitle">
+    Leading Gold Coast Graphic Designers
+  </Fragment>
+  <Fragment slot="title">
+    Graphic Design Packages.
+  </Fragment>
+  <Fragment slot="desc">
+    In an era of digital marketing, sometimes going beyond the screen can make a remarkable impact. By tapping into traditional advertising mediums like billboards and buses, your brand can reach a broader audience. Your brand's physical presence is as crucial as its online identity. Ensuring that your brand makes a memorable impression from the street to the web.
+  </Fragment>
+  <Fragment slot="cover">
+    <img
+              src="/works/website-mock-ups.webp"
+              class="object-cover w-full h-full"
+              alt="Graphic design for all platforms from buses, billboards, Google Display / interactive ads, Facebook ad creatives in all sizes, and much more."
+            />
+  </Fragment>
+</SectionHeadImg>
+
+<SectionHeadSecImg>
+  <Fragment slot="smltitle">
+    Brand Design for All Platforms
+  </Fragment>
+  <Fragment slot="title">
+    Consistent Branding.
+  </Fragment>
+  <Fragment slot="desc">
+    Consistency is the backbone of effective branding. I help create brand guidelines that serve as a roadmap for using your visual elements. From color codes to logo usage, these guidelines ensure that your brand maintains its identity across various mediums. The branding process doesn't stop at the initial design. I work with you to create brand strategies that can withstand the test of time.
+  </Fragment>
+  <Fragment slot="cover">
+    <img
+              src="/works/gwd-interactive-ads.webp"
+              class="object-cover w-full h-full"
+              alt="Consistent brand design and graphic design on the Gold Coast with an in-person service for revisions."
+            />
+  </Fragment>
+</SectionHeadSecImg>
+
+
+<OptionsSec />
+
+
+<SectionHeadImg>
+  <Fragment slot="smltitle">
+    Leading Gold Coast Graphic Designers
+  </Fragment>
+  <Fragment slot="title">
+    All-inclusive Graphic Design.
+  </Fragment>
+  <Fragment slot="desc">
+    From brand strategy, keyword research and graphic design we have you covered. Our websites aim to reach page 1 of Google as soon as possible through well designed websites, graphic design and branding that relates to your target customer, and marketing creatives that stop scrolls.
+  </Fragment>
+  <Fragment slot="cover">
+    <img
+              src="/works/cube-3d.webp"
+              class="object-cover w-full h-full"
+              alt="Graphic design for all platforms from buses, billboards, Google Display / interactive ads, Facebook ad creatives in all sizes, and much more."
+            />
+  </Fragment>
+</SectionHeadImg>
+
+<SectionHeadSecImg>
+  <Fragment slot="smltitle">
+    Brand Design for All Platforms
+  </Fragment>
+  <Fragment slot="title">
+    Consistent Lead Generation from Your Website.
+  </Fragment>
+  <Fragment slot="desc">
+    We focus on UX-design because it is one of the hidden forces of design that drives sales. Quickly proving to your customers that your brand means quality and increasing conversion rate. When we assess a website for a redesign, we are focused on how we can improve conversion rate and visibility in search engines for high-value keywords.
+  </Fragment>
+  <Fragment slot="cover">
+    <img
+              src="/works/ax-sqr-drts.webp"
+              class="object-cover object-top w-full h-full"
+              alt="Consistent brand design and graphic design on the Gold Coast with an in-person service for revisions."
+            />
+  </Fragment>
+</SectionHeadSecImg>
+
+
+
+<SectionHeadImg>
+  <Fragment slot="smltitle">
+    Complete Graphic Design for Brands
+  </Fragment>
+  <Fragment slot="title">
+    Logos, Colour Palettes and Fonts.
+  </Fragment>
+  <Fragment slot="desc">
+    The colors and fonts you choose play a pivotal role in shaping your brand's personality. I understand the psychology behind colors and typography, ensuring that your brand elements resonate with your target audience. Whether it's a playful and vibrant palette or a sleek and modern font, I'll guide you to the right choices.
+  </Fragment>
+  <Fragment slot="cover">
+    <img
+              src="/works/complete-brand-pack.webp"
+              class="object-cover w-full h-full"
+              alt="Graphic design for all platforms from buses, billboards, Google Display / interactive ads, Facebook ad creatives in all sizes, and much more."
+            />
+  </Fragment>
+</SectionHeadImg>
+
+<SectionHeadSecImg>
+  <Fragment slot="smltitle">
+    Brand Design for All Platforms
+  </Fragment>
+  <Fragment slot="title">
+    Billboards, Buses, and Much More.
+  </Fragment>
+  <Fragment slot="desc">
+    We design marketing strategies and campaigns from the idea up, to work for a range of advertising mediums. Not just focusing on digital marketing, we can always provide a range of strategies based on the cheapest avenues for reaching customers that particular month.
+  </Fragment>
+  <Fragment slot="cover">
+    <img
+              src="/works/br-bus-live.webp"
+              class="object-cover object-top w-full h-full"
+              alt="Consistent brand design and graphic design on the Gold Coast with an in-person service for revisions."
+            />
+  </Fragment>
+</SectionHeadSecImg>
+
+<FirstProcess />
+
+<Cta />
+
+<Faq />
+
+<BlogPosts />
+  
+</Layout>

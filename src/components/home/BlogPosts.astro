@@ -1,0 +1,79 @@
+---
+const stats = [
+  {
+    name: 'Multi-modal campaign design.',
+    desc: 'We deployed a multi-modal marketing strategy across the whole of the Gold Coast for a client in the Real Estate industry.',
+    value: 'Real Estate Web Design & Marketing',
+    link: '/web-design/previous-work/ball-realty',
+  },
+  {
+    name: 'CRO for e-commerce web design.',
+    desc: 'Some of our favourite, most effective web design tricks to boost conversion rates on any e-commerce store.',
+    value: 'E-Commerce / Shopify Optimisation',
+    link: 'https://blog.aidxn.com/posts/ecommerce-design-tricks',
+  },
+  {
+    name: 'Wordpress conversion optimisation.',
+    desc: 'Our strategies for reducing Wordpress page load time with impressive results for a client.',
+    value: 'Health Care Web Design & Branding',
+    link: '/web-design/previous-work/esteem-clinics/',
+  },
+  {
+    name: '$50k in sales with $0 in marketing.',
+    desc: 'Marketing management for a client in the events industry, generating over $50k in sales without a dime on advertising.',
+    value: 'Music Event Web Design & Marketing',
+    link: '/web-design/previous-work/the-boogie-collective',
+  },
+];
+---
+
+
+<section class="my-28">
+  <div class="mx-auto w-full px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col">
+      <div class="flex flex-col justify-center">
+        
+        <div class="flex flex-col gap-4 sm:gap-6">
+          <!-- Mission description -->
+          
+              <h4 class="text-base lg:text-lg uppercase font-thin tracking-widest">
+                Generating serious results in all industries
+              </h4>
+              <h3 class="text-3xl sm:text-4xl font-medium tracking-tight">Case Studies</h3>
+              <p class="text-primary-950/80 dark:text-primary-200/80 max-w-5xl text-lg xs:text-xl">
+                Website design and marketing strategies that give brands the competitive edge. Read about how we generate real results, in detail.
+              </p>
+              <div class=" ">
+                <a
+                    href="https://blog.aidxn.com/"
+                    class="mt-2 mr-4 bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                  >
+                    All Blog Posts
+                </a>
+              </div>
+            
+
+      </div>
+    </div>
+    <div class="w-full flex flex-col justify-center">
+
+      <dl class="grid md:grid-cols-2 gap-6 my-12">
+        {
+          stats.map((stat) => (
+          <a href={stat.link}>  
+            <div class="border-primary-900/10 dark:border-primary-300/10 hover:bg-primary-900/10 hover:dark:bg-primary-300/10 duration-200 rounded-3xl border px-4 md:px-6 py-8 sm:py-12 h-full flex flex-col justify-center gap-4">
+              <dt class="text-xs uppercase font-thin tracking-widest">{stat.value}</dt>
+              <dd class="text-lg xs:text-xl lg:text-2xl font-medium leading-loose tracking-tighter xs:tracking-tight">{stat.name}</dd>
+              <p class="text-primary-950/80 dark:text-primary-200/80 text-base xs:text-lg leading-6">
+                    {stat.desc}
+                  </p>
+            </div>
+          </a>
+          ))
+        }
+      </dl>
+      
+    </div>
+    
+  </div>
+</section>

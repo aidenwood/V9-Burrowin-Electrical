@@ -1,0 +1,90 @@
+---
+import Cta from '../../components/home/Cta-ContactShort.astro';
+import SlotHero from '../../components/home/Slot-PageHero.astro';
+import SectionHeadImg from "../../components/home/slot-img.astro";
+import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
+import Process from '../../components/home/Section-Process.astro';
+import FirstProcess from '../../components/home/Process-Sml.astro';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  description="SEO that moves with your business and customer. Finding where your target market can best be reached for where your business is at, anytime. Weekly management and tracking of SEO impact and results for all web design clients for 6 months, included."
+  title="Search Engine Optimisation · Aidxn"
+>
+
+    <SlotHero>
+      <Fragment slot="smltitle">
+        SEO strategies for improving organic lead generation
+      </Fragment>
+      <Fragment slot="title">
+        Search Engine Optimisation.
+      </Fragment>
+      <Fragment slot="desc">
+        Trust over 10 years experience improving SEO rankings in a range of industries. All while offering a fresh take on web design and digital marketing in general. SEO that moves with your business and customer. Finding where your target market can best be reached for where your business is at, anytime. Weekly management and tracking of SEO impact and results for all web design clients for 6 months, included.
+      </Fragment>
+    </SlotHero>
+
+    <FirstProcess />
+
+          <SectionHeadImg>
+            <Fragment slot="smltitle">
+              Business Specific SEO Strategies
+            </Fragment>
+            <Fragment slot="title">
+              SEO that moves with your business.
+            </Fragment>
+            <Fragment slot="desc">
+              We develop your SEO for where your business is at month to month, how many customers you need and for which particular products / services. Maximising your profit margin and workload with automated lead generation. Looking for top-notch Gold Coast SEO services to boost your online business? With over ten years of experience in optimizing website SEO, we're your go-to experts.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/ax-sqr-cpc-results.webp"
+                        class="w-full"
+                        alt="month to month SEO optimisation for ecommerce and Shopify stores. Organically increase traffic to your website."
+                      />
+            </Fragment>
+          </SectionHeadImg>
+
+          <SectionHeadSecImg>
+            <Fragment slot="smltitle">
+              Fueling Organic Lead Generation
+            </Fragment>
+            <Fragment slot="title">
+              Generate more leads organically.
+            </Fragment>
+            <Fragment slot="desc">
+              Organic lead generation is more than a buzzword – it's a pivotal aspect of your online success. Through my organic lead generation strategies, I ensure that your business attracts high-quality leads that genuinely care about your products or services. Get ready to experience lead generation like never before and watch your business grow.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/e-comm-results.webp"
+                        class="w-full"
+                        alt="lead generation for free and without ads through search engine optimisation. Lower ad spend by climbing the ranks of Google Search for your brand."
+                      />
+            </Fragment>
+          </SectionHeadSecImg>
+
+          <SectionHeadImg>
+            <Fragment slot="smltitle">
+              Pivot Quickly with Constant Keyword Optimisation
+            </Fragment>
+            <Fragment slot="title">
+              On-going SEO for a fair price.
+            </Fragment>
+            <Fragment slot="desc">
+              Keywords are the building blocks of SEO, and I have mastered the art of keyword optimisation. My keyword research and implementation techniques ensure that your website ranks high on search engine result pages. By harnessing the power of keywords, I drive valuable organic traffic to your site, boosting your online visibility and delivering measurable results.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/ax-sqr-re-placement.webp"
+                        class="w-full"
+                        alt="expert SEO techniques using Google Keyword planner constantly to outline rising and falling keyword trends. Putting your website in the keywords that matter most each month."
+                      />
+            </Fragment>
+          </SectionHeadImg>
+  
+  <Process />
+  <Cta />
+
+</Layout>

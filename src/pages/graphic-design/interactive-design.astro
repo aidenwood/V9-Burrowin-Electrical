@@ -1,0 +1,87 @@
+---
+import Cta from '../../components/home/Cta-ContactShort.astro';
+import SlotHero from '../../components/home/Slot-PageHero.astro';
+import SectionHeadImg from "../../components/home/slot-img.astro";
+import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
+import Process from '../../components/home/Section-Process.astro';
+import FirstProcess from '../../components/home/Process-Sml.astro';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  description="Physical installation design for events and interactive marketing design. Creating immersive branded experiences for pop ups and events across Australia for over 6 years. Technology capable installation design for Australian brands. A part of The Boogie Collective and Immersive Structures brands"
+  title="Interactive Design · Aidxn"
+>
+
+    <SlotHero>
+      <Fragment slot="smltitle">
+        Outdoor Installations and Interactive Design
+      </Fragment>
+      <Fragment slot="title">
+        Interactive design.
+      </Fragment>
+      <Fragment slot="desc">
+        Physical installation design for events and interactive marketing design. Creating immersive branded experiences for pop ups and events across Australia for over 6 years. Technology capable installation design for Australian brands. A part of The Boogie Collective and Immersive Structures brands.
+      </Fragment>
+    </SlotHero>
+
+    <FirstProcess />
+
+          <SectionHeadImg>
+            <Fragment slot="smltitle">
+              Advertise on the most popular websites in your industry
+            </Fragment>
+            <Fragment slot="title">
+              Interactive Ads to display across popular websites.
+            </Fragment>
+            <Fragment slot="desc">
+              Google Display advertising is by far one of the most underutilised marketing tools out there, and it has been around for longer than most. Displaying over 98.5% of the internets display ads is the massive value that comes with this technology. We have used it for years and specialise in creating interactive coded ad designs that allow users to interact with your ad without an ad click, extending budget which pushes them to the biggest websites.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/br-mac-render-med.webp"
+                        class="w-full rounded duration-200 hover:shadow-sm"
+                      />
+            </Fragment>
+          </SectionHeadImg>
+
+          <SectionHeadSecImg>
+            <Fragment slot="smltitle">
+              Gold Coast Graphic Design and Digital Marketing Expert
+            </Fragment>
+            <Fragment slot="title">
+              Marketing Design you can trust.
+            </Fragment>
+            <Fragment slot="desc">
+              When choosing someone who your brand can rely on for using Google Display, you need an expert in both Graphic Design and Digital Marketing that is also happy to understand your brand fully, to then understand your target market. We do everything here and have gotten low budget display campaigns to promote wildly successful results. Get in contact to learn more.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/hero-estem.webp"
+                        class="w-full rounded duration-200 hover:shadow-sm"
+                      />
+            </Fragment>
+          </SectionHeadSecImg>
+
+          <SectionHeadImg>
+            <Fragment slot="smltitle">
+              Marketing Design, In-Person
+            </Fragment>
+            <Fragment slot="title">
+              Revise your campaign design in-person.
+            </Fragment>
+            <Fragment slot="desc">
+              We're switching things up in our industry by providing a highly personalised creative and managemen experience, promoting in-person meetings over video and always around for a quick chat for years to come. Providing plenty of on-going support for no charge when they are simple changes.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/br-mac-render-med.webp"
+                        class="w-full rounded duration-200 hover:shadow-sm"
+                      />
+            </Fragment>
+          </SectionHeadImg>
+  
+  <Process />
+  <Cta />
+
+</Layout>

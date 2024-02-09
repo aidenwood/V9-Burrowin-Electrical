@@ -1,0 +1,87 @@
+---
+import Cta from '../../components/home/Cta-ContactShort.astro';
+import SlotHero from '../../components/home/Slot-PageHero.astro';
+import SectionHeadImg from "../../components/home/slot-img.astro";
+import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
+import Process from '../../components/home/Section-Process.astro';
+import FirstProcess from '../../components/home/Process-Sml.astro';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  description="Improving the design of your entire sales funnel from web design, ux design, branding, ad targeting and creatives. All marketing strategy and website redesigns discussed and revised in person for a better experience for you. Expert digital marketing management on the Gold Coast."
+  title="Conversion Optimisation · Aidxn Web Design"
+>
+
+    <SlotHero>
+      <Fragment slot="smltitle">
+        Marketing Funnel & Conversion Optimisation
+      </Fragment>
+      <Fragment slot="title">
+        Marketing funnel conversion optimisation.
+      </Fragment>
+      <Fragment slot="desc">
+        Trust over 6 years experience improving conversion rates in a range of industries. All while offering a fresh take on web design and digital marketing in general.
+      </Fragment>
+    </SlotHero>
+
+    <FirstProcess />
+
+          <SectionHeadImg>
+            <Fragment slot="smltitle">
+              We find winning ad creatives and targeting
+            </Fragment>
+            <Fragment slot="title">
+              Finding and improving the weakest links in design and messaging.
+            </Fragment>
+            <Fragment slot="desc">
+              Unless your digital marketing agency is creative atleast a few new ad creatives every week for your brand, then you're simply getting ripped off. We apply more creative and targeting testing than most do by far, but that is absolutely how you compete in the fast moving world of digital marketing. Otherwise your money is simply being spent for empty results to show you.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/facebook-marketing-results.png"
+                        class="w-full rounded duration-200 hover:shadow-sm"
+                      />
+            </Fragment>
+          </SectionHeadImg>
+
+          <SectionHeadSecImg>
+            <Fragment slot="smltitle">
+              Improving conversion rate through design
+            </Fragment>
+            <Fragment slot="title">
+              Producing short form video ads.
+            </Fragment>
+            <Fragment slot="desc">
+              At Aidxn Design, we understand the unique needs of businesses in the Gold Coast area. Our team of experienced professionals will work closely with you to create a customized Wordpress store that not only looks fantastic but also drives results. Whether you're looking to revamp your existing online store or start from scratch, our Gold Coast Wordpress design services are tailored to meet your specific goals and objectives. We use proven strategies and cutting-edge design techniques to help you stand out in the competitive e-commerce landscape.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/hero-estem.webp"
+                        class="w-full rounded duration-200 hover:shadow-sm"
+                      />
+            </Fragment>
+          </SectionHeadSecImg>
+
+          <SectionHeadImg>
+            <Fragment slot="smltitle">
+              In-person web design revisions on the Gold Coast
+            </Fragment>
+            <Fragment slot="title">
+              Gold Coast website design and e-commerce optimisation, face-to-face.
+            </Fragment>
+            <Fragment slot="desc">
+              Don't settle for an average online store when you can have a high-converting, visually appealing Wordpress website designed by Aidxn Design. Contact us today to take your Gold Coast e-commerce business to the next level with our expertise in UX design and conversion rate optimization. Your success is our priority, and we're here to help you achieve it!
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                        src="/works/br-mac-render-med.webp"
+                        class="w-full rounded duration-200 hover:shadow-sm"
+                      />
+            </Fragment>
+          </SectionHeadImg>
+  
+  <Process />
+  <Cta />
+
+</Layout>

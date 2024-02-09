@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Hero from '../components/home/Hero.astro';
+import Process from '../components/home/Section-Process.astro';
+import Intro from '../components/home/Section-Numbers-Intro.astro';
+import Clients from '../components/home/Section-IconGrid-Clients.astro';
+
+import CtaContactShort from '../components/home/Cta-ContactShort.astro';
+
+import WebIntro from '../components/home/Basic-Intro-Web.astro';
+import PricingWeb from '../components/pricing/PricingTable-Duo-Web.astro';
+import WebSliddy from '../components/home/Sliddy-Sml-Web.astro';
+
+import MarketIntro from '../components/home/Basic-Intro-Market.astro';
+import PricingMarket from '../components/pricing/PricingTable-Duo-Market.astro';
+import MarketingSliddy from '../components/home/Sliddy-Sml-Marketing.astro';
+
+import CtaContactServices from '../components/home/Cta-ContactServices.astro';
+
+import BlogPosts from '../components/home/BlogPosts.astro';
+
+---
+
+<Layout
+  description="Over 10 years professional experience in website design and digital marketing. Where code meets design."
+  title="Home · Aidxn"
+>
+  
+
+  <Hero />
+  
+  <Intro />
+  <Process />
+
+  <Clients />
+  
+  <WebIntro />
+  <PricingWeb />
+  <WebSliddy />
+
+  <CtaContactShort />
+  
+  <MarketIntro />
+  <PricingMarket />
+  <MarketingSliddy /> 
+
+  <CtaContactServices />
+
+  <BlogPosts />
+
+
+</Layout>

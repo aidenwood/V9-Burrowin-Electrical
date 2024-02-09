@@ -1,0 +1,135 @@
+---
+
+/* Velocity9 - Pricing Table */
+/* Most Current Pricing Table Design */
+/* Copy from this file for client projects */
+
+const pricing = [
+  {
+    name: 'Small',
+    description: 'Custom web design built on the Velocity9 theme. Recommended package for small businesses in need of strong online lead generation and custom web design.',
+    periodicity: '+ GST',
+    price: '$3445',
+    action: 'Buy Now',
+    link: 'https://buy.stripe.com/9AQ4hPbLt457532fZ5',
+    features: [
+      'Velocity V9 Installation',
+      'Lifetime License',
+      'A+ / 100% Web Performance', 
+      '8 Pages', 
+      '1 In-Person Revisions', 
+      '3,000 words of content min.',
+      'Keyword Research & SEO',
+      'Domain & DNS Setup',
+      'Turnaround in 21 days',
+      '1 Year of Incl. Email Support'
+    ],
+  },
+  {
+    name: 'Medium',
+    description: 'Custom web design built on the Velocity9 theme. Recommended package for brands needing major improvements to online competitiveness, conversion rate, CTR and SEO.',
+    isFlagged: true,
+    periodicity: '+ GST',
+    price: '$5445',
+    action: 'Buy Now',
+    link: 'https://buy.stripe.com/cN2aGd6r9eJL0MMaEZ',
+    features: [
+      'Velocity V9 Installation',
+      'Lifetime License',
+      'A+ / 100% Web Performance',
+      '16 Pages', 
+      '2 In-Person Revisions', 
+      '7,500 words of content min.', 
+      'Small Graphic Design Pack',
+      'Keyword Research & SEO',
+      'Competitor Research',
+      'Domain & DNS Setup',
+      'Turnaround in 45 days',
+      '1 Year of Incl. Email Support'  
+    ],
+  },
+  {
+    name: 'Large',
+    description: 'Custom e-commerce solution powered by the Velocity9 theme. Integrated with Stripe for industry leading e-commerce tools and secure payment processing. Includes ApplePay / GPay / AfterPay.',
+    periodicity: '+ GST',
+    price: '$9445',
+    action: 'Buy Now',
+    link: 'https://buy.stripe.com/7sIaGd7vdgRT9jidRa',
+    features: [
+      'Velocity V9 Installation',
+      'Lifetime License',
+      'A+ / 100% Web Performance',
+      '32 Pages and Products',
+      'Product Management Tools',
+      'Stripe Integration',
+      'ApplePay and gPay Integration',
+      'AfterPay Integration',
+      '3 In-Person Revisions', 
+      '15,000 words of content min.', 
+      'Medium Graphic Design Pack',
+      'Keyword Research & SEO',
+      'Competitor Research',
+      'Motion Design Plan',
+      'Domain & DNS Setup',
+      'Turnaround in 90 days',
+      '1 Year of Incl. Email Support'
+    ],
+  },
+];
+---
+<style>
+  #contain { max-width: 1920px; }
+</style>
+
+<section class="py-16 sm:py-20">
+  <div id="contain" class="mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="-mt-8 grid gap-8 lg:mt-0 md:grid-cols-3">
+      {
+        pricing.map((item) => (
+          <div
+            class:list={[
+              'relative flex flex-col gap-6 rounded-3xl p-8',
+              item.isFlagged && 'bg-primary-500/10 dark:bg-primary-400/10',
+            ]}
+          >
+            <div class="flex-1">
+              <h2 class="text-xl font-medium">{item.name}</h2>
+              <p class="mt-4 flex items-baseline">
+                <span class="text-4xl font-medium tracking-tight">{item.price}</span>
+                <span class="text-primary-950/70 dark:text-primary-200/70 ml-1 text-xs font-medium">
+                  {item.periodicity}
+                </span>
+              </p>
+              <p class="text-primary-950/70 dark:text-primary-200/70 my-6 max-w-3xl text-lg md:text-sm lg:text-base">{item.description}</p>
+
+              <ul role="list" class="mt-8 text-base lg:text-lg space-y-4 lg:space-y-6">
+                {item.features.map((feature) => (
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="text-primary-600 dark:text-primary-400 h-6 w-6 flex-shrink-0"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" />
+                    </svg>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div class="block">
+              <a
+                href={item.link}
+                class="bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              >
+                Buy now
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,133 @@
+---
+import Cta from '../../components/home/Cta-ContactShort.astro';
+import SlotHero from '../../components/home/Slot-PageHero.astro';
+import SlotImgGSAP from "../../components/home/Slot-img-gsap.astro";
+import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
+import SectionHeadImg from "../../components/home/slot-img.astro";
+import Process from '../../components/home/Section-Process.astro';
+import FirstProcess from '../../components/home/Process-Sml.astro';
+import Layout from '../../layouts/Layout.astro';
+import Pricing from '../../components/pricing/PricingTable-Shopify.astro';
+import SingleBlogPost from '../../components/home/Slot-BlogPost-Single.astro';
+
+---
+
+<Layout
+  description="We have been building custom websites that run on the Shopify platform for over 6 years. One of the leaders in e-commerce management with powerful tools for easy integrations, it absolutely is a winner for larger scale business. Speak to us about a custom Shopify website design today."
+  title="Shopify Website Design · Aidxn"
+>
+
+    <SlotHero>
+      <Fragment slot="smltitle">
+        Gold Coast Shopify Expert
+      </Fragment>
+      <Fragment slot="title">
+        Shopify web design
+      </Fragment>
+      <Fragment slot="desc">
+        We have been building custom websites that run on the Shopify platform for over 6 years. One of the leaders in e-commerce management with powerful tools for easy integrations, it absolutely is a winner for larger scale business. Speak to us about a custom Shopify website design today.
+      </Fragment>
+    </SlotHero>
+
+
+    <Pricing />
+
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2">
+        <a href="https://pbwagyu.com/">  
+          <SingleBlogPost>
+            <Fragment slot="smltitle">
+              Case Study
+            </Fragment>
+            <Fragment slot="title">
+              Nation-Wide Shopify B2B Optimisation
+            </Fragment>
+            <Fragment slot="desc">
+              Pure Blue Beef have partnered with Aidxn Design for the last 3 years, for scalable B2B and B2C solutions.
+            </Fragment>
+          </SingleBlogPost>
+        </a>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <a href="https://esteemclinic.com.au/">  
+          <SingleBlogPost>
+            <Fragment slot="smltitle">
+              Case Study
+            </Fragment>
+            <Fragment slot="title">
+              Custom Shopify Theme Development
+            </Fragment>
+            <Fragment slot="desc">
+              Taking a 20 year old Gold Coast health brand to selling products nation-wide with a custom Shopify store.
+            </Fragment>
+          </SingleBlogPost>
+        </a>
+      </div>
+    </div>
+    
+
+    <FirstProcess />
+
+          <SectionHeadImg> <!-- Replace with SlotImgGSAP to load GSAP1 -->
+            <Fragment slot="smltitle">
+              Maximising your use of Shopify
+            </Fragment>
+            <Fragment slot="title">
+              Seamless Shopping, Seamless Management
+            </Fragment>
+            <Fragment slot="desc">
+              Tired of juggling complex e-commerce tools and battling with technology? Our Shopify web design solutions are designed for ease. We create a seamless shopping experience for your customers and provide you with an intuitive platform for managing your products, orders, and customers. Say goodbye to tech headaches and hello to smooth sailing in the world of e-commerce. Let's redefine your online store together.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                src="/works/ax-sqr-estemshop.webp"
+                class="w-full"
+                alt="custom shopify website designer on the Gold Coast. Improving sales and conversion rate for shopify business owners by offering website design, brand design and digital marketing management."
+              />
+            </Fragment>
+          </SectionHeadImg>
+
+          <SectionHeadSecImg>
+            <Fragment slot="smltitle">
+              Shopify design tailored to your brand
+            </Fragment>
+            <Fragment slot="title">
+              On-Brand Shopify Experiences
+            </Fragment>
+            <Fragment slot="desc">
+              When it comes to e-commerce, one size doesn't fit all. Our Shopify design services are all about personalization. We dive deep into your brand's identity, your products, and your target audience to create a tailor-made online shopping experience. Our goal? To make sure your customers feel right at home on your website. We'll capture your brand's essence and showcase your products with elegance and efficiency.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                src="/works/e-comm-results.webp"
+                class="w-full"
+                alt="Complete brand and ecommerce store design. Creating interactive and 3d shopify store designs. Animated website designs for ecommerce."
+              />
+            </Fragment>
+          </SectionHeadSecImg>
+
+          <SectionHeadImg>
+            <Fragment slot="smltitle">
+              Ongoing Management Not Always Available
+            </Fragment>
+            <Fragment slot="title">
+              Keeping Sales Running Smoothly
+            </Fragment>
+            <Fragment slot="desc">
+              I'm on a mission to revolutionize the Gold Coast web design industry, and Shopify is my tool of choice for e-commerce brands. Custom e-commerce design is not just a service but a commitment to delivering an online store that resonates with the Gold Coast's unique spirit. It's time to stand out from the digital crowd, optimize your e-commerce operations, and captivate your local audience. Let's embark on a Gold Coast web design journey that leverages the power of Shopify, crafting a custom e-commerce store that represents your brand and products in the best way possible.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                src="/works/re-placement.webp"
+                class="w-full"
+                alt="Website design that compliments your marketing campaigns. Allowing for a seamless marketing funnel and ecommerce conversion improvement. Get more traffic to your Shopify store with Google ads."
+              />
+            </Fragment>
+          </SectionHeadImg>
+  
+
+
+  <Process />
+  <Cta />
+
+</Layout>

@@ -1,0 +1,170 @@
+---
+const bottomLinks = [
+  
+  {
+    header: 'Main',
+    links: [
+      {
+        name: 'Home',
+        href: '/',
+        isExternal: false,
+      },
+      {
+        name: 'About',
+        href: '/about',
+        isExternal: false,
+      },
+      {
+        name: 'Pricing',
+        href: '/pricing',
+        isExternal: false,
+      },
+      {
+        name: 'Contact',
+        href: '/contact',
+        isExternal: false,
+      },
+    ],
+  },
+  {
+    header: 'Services',
+    links: [
+      {
+        name: 'Graphic Design',
+        href: '/graphic-design',
+        isExternal: false,
+      },
+      {
+        name: 'Web Design',
+        href: '/web-design',
+        isExternal: false,
+      },
+      {
+        name: 'Digital Marketing',
+        href: '/digital-marketing',
+        isExternal: false,
+      },
+      {
+        name: 'Management',
+        href: '/moonshot-plan',
+        isExternal: false,
+      },
+    ],
+  },
+  {
+    header: 'Results',
+    links: [
+      {
+        name: 'Medical Web Design',
+        href: '/web-design/previous-work/esteem-clinics/',
+        isExternal: false,
+      },
+      {
+        name: 'E-Commerce Web Design',
+        href: 'https://blog.aidxn.com/posts/ecommerce-design-tricks/',
+        isExternal: false,
+      },
+      {
+        name: 'Events Web Design',
+        href: '/web-design/previous-work/the-boogie-collective',
+        isExternal: false,
+      },
+      {
+        name: 'Real Estate Web Design',
+        href: '/web-design/previous-work/ball-realty',
+        isExternal: false,
+      },
+    ],
+  },
+  {
+    header: 'Social',
+    links: [
+      {
+        name: 'Github',
+        href: 'https://github.com/aidenwood',
+        isExternal: true,
+      },
+      {
+        name: 'Instagram',
+        href: 'https://instagram.com/aidxn.design',
+        isExternal: true,
+      },
+      {
+        name: 'Facebook',
+        href: 'https://facebook.com/aidxn.design',
+        isExternal: true,
+      },
+      {
+        name: 'Twitter',
+        href: 'https://twitter.com/aidxn.design',
+        isExternal: true,
+      },
+    ],
+  },
+];
+---
+
+<style>
+  #contain { max-width: 1920px; }
+</style>
+
+<footer
+  class="bg-primary-800/20 dark:bg-primary-700/20 py-16 lg:mt-20 lg:py-20"
+  aria-labelledby="footer-heading"
+>
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div id="contain" class="mx-auto w-full px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-16 md:gap-24 xl:flex-row">
+      <div class="flex w-full max-w-xl flex-col items-start justify-center gap-6 sm:gap-8">
+        <img
+          class="h-8 xs:h-20 sm:h-24 w-auto"
+          :src="$store.theme.isDark ? '/ax-logo-white.svg' : '/ax-logo-purp.svg'"
+          alt="Aidxn Design - Gold Coast Web Design"
+        />
+        <p class="text-primary-950 dark:text-primary-200 text-lg sm:text-xl">
+          Leaders on the Gold Coast in web design, SEO, graphic design and digital marketing.
+          Web design done face-to-face.
+        </p>
+        <p class="text-primary-950 dark:text-primary-200 text-lg sm:text-xl">ABN: 13 392 753 698</p>
+        <p class="text-primary-950 dark:text-primary-200 text-lg sm:text-xl">© 2023 Aidxn Design</p>
+      </div>
+
+      <!-- Bottom links -->
+      <div class="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 justify-end">
+        {
+          bottomLinks.map((group) => (
+            <div class="flex flex-col justify-center gap-4">
+              <p class="text-xl md:text-sm sm:text-base font-medium">{group.header}</p>
+              <ul role="list" class="flex flex-col gap-3">
+                {group.links.map((link) => (
+                  <li>
+                    <a
+                      href={link.href}
+                      class="focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200 inline-flex items-center gap-1 rounded-md text-lg md:text-sm xl:text-base hover:underline focus-visible:outline focus-visible:outline-2"
+                      target={link.isExternal ? '_blank' : undefined}
+                      rel={link.isExternal ? 'noopener' : undefined}
+                    >
+                      {link.name}
+                      {link.isExternal && (
+                        <svg
+                          class="h-4 w-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z" />
+                        </svg>
+                      )}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <!-- New Row for submissions  -->
+  </div>
+</footer>

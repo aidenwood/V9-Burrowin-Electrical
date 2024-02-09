@@ -1,0 +1,165 @@
+---
+import Cta from '../../../components/home/Cta-ContactShort.astro';
+import SlotHero from '../../../components/previous-works/Slot-WorksHero.astro';
+import SectionInfo from "../../../components/previous-works/Slot-WorksInfo.astro";
+import SectionInfoLong from "../../../components/previous-works/Slot-WorksInfoLong.astro";
+import SlotEndHero from '../../../components/previous-works/Slot-WorksHeroCta.astro';
+import BlogPosts from '../../../components/home/BlogPosts.astro';
+import ColourBlock from "../../../components/previous-works/Slot-WorksColourBlock.astro";
+
+import SectionHeadSecImg from "../../../components/home/slot-img-rev.astro";
+import Process from '../../../components/home/Section-Process.astro';
+import FirstProcess from '../../../components/home/Process-Sml.astro';
+import Layout from '../../../layouts/Layout.astro';
+import Pricing from '../../../components/pricing/PricingTable-Shopify.astro';
+import BlogPost from '../../../components/home/Slot-BlogPost-Single.astro';
+
+---
+
+<Layout
+  description="We have been building custom websites that run on the Shopify platform for over 6 years. One of the leaders in e-commerce management with powerful tools for easy integrations, it absolutely is a winner for larger scale business. Speak to us about a custom Shopify website design today."
+  title="Esteem Clinics · Previous Work · Aidxn Web Design"
+>
+
+    <SlotHero>
+      <Fragment slot="smltitle">
+        Esteem Clinics
+      </Fragment>
+      <Fragment slot="title">
+        Wordpress Website Design refresh for a Gold Coast health care brand.
+      </Fragment>
+      <Fragment slot="desc">
+        Esteem Clinics approached me with a challenge – to breathe new life into a 25 year old brand and optimise a multi-platform website. presence and create a captivating website that reflects their commitment to beauty and wellness.
+      </Fragment>
+    </SlotHero>
+
+    <ColourBlock>
+      <Fragment slot="smltitle">
+        Wordpress Website Design and Optimisation
+      </Fragment>
+      <Fragment slot="title">
+        Improving Lead Generation through Wordpress Web Design.
+      </Fragment>
+      <Fragment slot="desc">
+        Quickly improving the performance and design of Esteem Clinics website led to a massive boost in brand reception with new customers, and a higher return rate with previous customers.
+      </Fragment>
+      <Fragment slot="cover">
+      <a href="https://esteemclinic.com.au/">
+        <img
+        :src="$store.theme.isDark ? '/logos/estem.svg' : '/logos/esteem-greyed.svg'"
+          class=""
+          alt="web design for esteem clinic. Gold Coast website designer for Wordpress and Shopify conversion rate optimisation."
+        />
+      </a>
+      </Fragment>
+    </ColourBlock>
+
+    
+    <SectionInfo>
+      <Fragment slot="smltitle">
+        Cost-Effective CPA Marketing Strategies
+      </Fragment>
+      <Fragment slot="title">
+        32x improvement on cost per aquisition.
+      </Fragment>
+      <Fragment slot="desc">
+        Boosting online visibility is critical for any business. For Esteem Clinics, I focused on implementing highly targeted and cost-effective CPC marketing strategies. Through meticulous keyword research and ad campaign optimization, I ensured that Esteem Clinics' digital advertising budget was utilized efficiently. These strategies helped them connect with their target audience while maintaining a manageable budget.
+      </Fragment>
+      <Fragment slot="cover">
+        <img
+          src="/works/e-comm-results.webp"
+          class="rounded-lg"
+        />
+      </Fragment>
+      <Fragment slot="cover2">
+        <img
+          src="/works/facebook-marketing-results.png"
+          class="rounded-lg"
+          alt="Facebook marketing results and digital marketing campaign optimisation for a health clinic and beauty industry website. Shopify and Wordpress CRO and pageload speed optimisation. Then creating over 30 facebook ad creatives to A/B test the best ad strategy in under 2 weeks. Improving facebook marketing results by 20x in 3 weeks and improving cost per conversion by 8x in 2 weeks."
+        />
+      </Fragment>
+    </SectionInfo>
+
+    <SectionInfoLong>
+      <Fragment slot="smltitle">
+        Intense Wordpress Pageload Optimisation
+      </Fragment>
+      <Fragment slot="title">
+        Pageload performance from 5.2s to 1.2s.
+      </Fragment>
+      <Fragment slot="desc">
+        Optimizing Esteem Clinics' WordPress website was a remarkable challenge due to its extensive 20-year usage, which had left it with sluggish page load times. While migration was an option, the associated costs were quite significant. Instead, I harnessed my expertise to enhance their existing WordPress platform, fine-tuning it to meet Web3 standards for swift and seamless page loading. Within the first week of our web development journey, I successfully achieved a dramatic reduction in page load times, slashing them from 5.2 seconds to an impressive 1.2 seconds.
+      </Fragment>
+      <Fragment slot="desc2">
+        Esteem Clinics can now reap the benefits of improved web performance without the need for a costly migration. Their legacy WordPress platform has been revitalized, and visitors can navigate their website with unparalleled speed and efficiency. This optimization not only enhances user experience but also significantly bolsters Esteem Clinics' digital presence, ensuring they remain at the forefront of their industry for years to come.
+      </Fragment>
+    </SectionInfoLong>
+
+    <SectionInfo>
+      <Fragment slot="smltitle">
+        Wordpress Web Design and Optimisation
+      </Fragment>
+      <Fragment slot="title">
+        Consumer-centric UX web design.
+      </Fragment>
+      <Fragment slot="desc">
+        In conjunction with the e-commerce aspect, I revamped Esteem Clinics' content and engagement strategy. WordPress emerged as the perfect tool for creating a blog and resource center. Esteem Clinics can now share industry insights, beauty tips, and updates with their audience, establishing themselves as experts in their field. This content-driven approach not only enhances user engagement but also improves SEO rankings.
+      </Fragment>
+      <Fragment slot="cover">
+        <img
+          src="/works/ax-sqr-estem.webp"
+          class="rounded-lg w-full"
+        />
+      </Fragment>
+      <Fragment slot="cover2">
+        <img
+          src="/works/e-comm-results.webp"
+          class="w-full rounded-lg"
+          alt="E-commerce results from Shopify website optimisation. Gold Coast Shopify web design expert. Improving Shopify conversion rate faster than other agencies. Trust over 10 years of web design experience and in-person web design revisions for Gold Coast client to bring your new website to life, fast."
+        />
+      </Fragment>
+    </SectionInfo>
+
+    <SectionInfo>
+      <Fragment slot="smltitle">
+        Shopify Web Design: A New Avenue for Growth
+      </Fragment>
+      <Fragment slot="title">
+        Maximising e-commerce oppurtunity.
+      </Fragment>
+      <Fragment slot="desc">
+        Esteem Clinics wanted a fresh approach to their e-commerce strategy. By migrating their online store to the Shopify platform, I provided them with an efficient, user-friendly, and scalable solution. This transition significantly improved their ability to manage products, process orders, and provide a seamless shopping experience for their customers. Shopify's versatile platform allowed Esteem Clinics to accommodate future growth while maintaining a stunning online store that aligns with their brand identity.
+      </Fragment>
+      <Fragment slot="cover">
+        <img
+          src="/works/ax-sqr-estemshop.webp"
+          class="rounded-lg"
+          alt="Shopify store design by Gold Coast website design Aidxn Design. With over 100 Shopify stores created, and over 10 years of web design experience, you can trust us to develop you a high conversion website and e-commerce store."
+        />
+      </Fragment>
+      <Fragment slot="cover2">
+        <img
+          src="/works/cpc-results.webp"
+          class="rounded-lg"
+          alt="CPC digital marketing improvement by expert marketing managers. Website traffic improvement from expert marketing strategies. If you are managing you own marketing in house in a casual way, you are doing your business harm. Real results look a lot different to what some people think are decently working advertising campaigns. Don't overspend with Google and Facebook and let us improve your digital marketing targeting and digital marketing ad creatives to immediately improve your lead generation and marketing results."
+        />
+      </Fragment>
+    </SectionInfo>
+
+    
+
+    <SlotEndHero>
+      <Fragment slot="smltitle">
+        Ask anything, obligation-free
+      </Fragment>
+      <Fragment slot="title">
+        Let's connect.
+      </Fragment>
+      
+    </SlotEndHero>
+
+  <Process />
+
+  <BlogPosts />
+
+</Layout>
