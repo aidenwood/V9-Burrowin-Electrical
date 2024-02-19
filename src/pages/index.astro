@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 
 import Hero from '../components/home/Hero.astro';
+import FullScreenSliderHero from '../components/home/Slot-FullscreenSlider.astro';
+
 import Process from '../components/home/Section-Process.astro';
 import Intro from '../components/home/Section-Numbers-Intro.astro';
 import Clients from '../components/home/Section-IconGrid-Accreditors.astro';
@@ -18,7 +20,15 @@ import MarketingSliddy from '../components/home/Sliddy-Sml-Marketing.astro';
 
 import CtaContactServices from '../components/home/Cta-ContactServices.astro';
 
-import BlogPosts from '../components/home/BlogPosts.astro';
+import BlogPosts from '../components/home/Section-Services.astro';
+
+
+let backgroundUrl = 'url(/be/qual-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl2 = 'url(/be/kitch-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl3 = 'url(/be/outd-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+
+
 
 ---
 
@@ -29,6 +39,48 @@ import BlogPosts from '../components/home/BlogPosts.astro';
   
 
   <Hero />
+
+  <FullScreenSliderHero backgroundUrl={backgroundUrl} backgroundUrl2={backgroundUrl2} backgroundUrl3={backgroundUrl3} backgroundUrl4={backgroundUrl4}>
+    <Fragment slot="smltitle">
+      Modern Kitchen Electrical Works
+    </Fragment>
+    <Fragment slot="title">
+      Modern Designs
+    </Fragment>
+    <Fragment slot="desc">
+      With over 15 years of certified electrical expirience, you can trust us for complex jobs.
+    </Fragment>
+    
+    <Fragment slot="smltitle2">
+      Experienced, Professional Electrictians
+    </Fragment>
+    <Fragment slot="title2">
+      Quality Finishes
+    </Fragment>
+    <Fragment slot="desc2">
+      We take complete pride in our work, every single time. We love what we do, and we love doing it well!
+    </Fragment>
+  
+    <Fragment slot="smltitle3">
+      Compliant Outdoor Electrical Installations
+    </Fragment>
+    <Fragment slot="title3">
+      Outdoor Installations
+    </Fragment>
+    <Fragment slot="desc3">
+      We work with a range of businesses to install certified outdoor electrical installations.
+    </Fragment>
+
+    <Fragment slot="smltitle4">
+      Temporary and Permenant Council Installations
+    </Fragment>
+    <Fragment slot="title4">
+      Council Installations
+    </Fragment>
+    <Fragment slot="desc4">
+      Helping bring to life travelling art installations and the like for Brisbane and the Gold Coast.
+    </Fragment>
+  </FullScreenSliderHero>
   
  
 

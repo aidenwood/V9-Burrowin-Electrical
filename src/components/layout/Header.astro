@@ -34,15 +34,15 @@ const links = [
 #logo, #bookBtn, #navContainer {
   transition: 0.2s;
 }
-#navContainer { max-width: 1920px; }
+#contain, #website-menu { max-width: 1920px; }
 </style>
 
 <header id="navbar"
   x-data="{ open: false }"
   class="transition sticky top-0 z-50 backdrop-blur-xl drop-shadow-sm"
-  :class="{ 'bg-primary-200/50 dark:bg-primary-900/50': open, 'bg-primary-800/20 dark:bg-black/30': !(open) }"
+  :class="{ 'bg-primary-900/80 dark:bg-primary-900/50': open, 'bg-slate-900 dark:bg-slate-900': !(open) }"
 >
-  <div id="navContainer"
+  <div id="contain"
     class="mx-auto w-full flex items-center justify-between px-4 sm:px-6 lg:px-8 py-1 sm:py-2"
   >
     <!-- Brand logo -->
@@ -78,7 +78,7 @@ const links = [
       <!-- Toggle theme mode -->
       <button
         type="button"
-        class="dark:border-white dark:outline-violet-400 dark:text-white text-primary-950 hover:bg-primary-500/10 dark:hover:bg-primary-400/10 ring-primary-950 inline-flex h-12 xl:h-14 w-12 xl:w-14 items-center justify-center rounded-full transition focus:outline-none focus-visible:ring-2"
+        class="dark:text-white text-primary-600 hover:bg-primary-600/30 border-2 border-primary-600/30 hover:border-primary-600 dark:border-white/30 dark:hover:border-white inline-flex h-12 xl:h-14 w-12 xl:w-14 items-center justify-center rounded-full transition focus:outline-none focus-visible:ring-2"
         x-data
         @click="$store.theme.toggle()"
       >
@@ -115,7 +115,7 @@ const links = [
       <!-- Toggle menu -->
       <button
         type="button"
-        class="text-primary-950 hover:bg-primary-500/10 dark:hover:bg-primary-400/10 ring-primary-950 dark:border-white dark:outline-violet-400 dark:text-white inline-flex h-12 xl:h-14 w-12 xl:w-14 items-center justify-center rounded-full transition focus:outline-none focus-visible:ring-2"
+        class="dark:text-white text-primary-600 hover:bg-primary-600/30 border-2 border-primary-600/30 hover:border-primary-600 dark:border-white/30 dark:hover:border-white inline-flex h-12 xl:h-14 w-12 xl:w-14 items-center justify-center rounded-full transition focus:outline-none focus-visible:ring-2"
         @click="open = !open"
         @mousedown="if (open) $event.preventDefault()"
         aria-controls="website-menu"
@@ -153,7 +153,7 @@ const links = [
 
   <!-- Menu content -->
   <div
-    class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8"
+    class="mx-auto px-4 sm:px-6 lg:px-8"
     id="website-menu"
     x-cloak
     x-show="open"
@@ -162,12 +162,12 @@ const links = [
   >
     <div class="grid grid-cols-1 gap-16 lg:grid-cols-2 pt-8 pb-12">
       <div
-        class="bg-primary-500/30 dark:bg-primary-400/30 hidden items-center justify-center rounded-3xl px-6 py-8 lg:flex"
+        class="bg-primary-600 dark:bg-primary-400/30 hidden items-center justify-center rounded-3xl px-6 py-8 lg:flex"
       >
         <p
-          class="text-primary-950/70 dark:text-primary-200/70 max-w-sm text-xl leading-loose"
+          class="text-white dark:text-primary-200/70 max-w-sm text-xl leading-loose"
         >
-          <span class="font-medium">Velocity</span> is our very own website theme, having a powerful impact for clients in a range of industries. Developed for over 6 years, now at version 8.5.71.
+          <span class="font-medium">Burrowin Electrical</span> are a Gold Coast based electrical servicing company, known for providing high-quality work with attention to detail. Servicing both local and nation-wide contracts.
         </p>
       </div>
 
@@ -177,7 +177,7 @@ const links = [
           links.map((link) => (
             <a
               href={link.href}
-              class="text-primary-950 dark:text-primary-200 group inline-flex py-6 text-3xl font-medium tracking-tight transition focus-visible:outline-none sm:py-8 sm:text-4xl"
+              class="text-white dark:text-primary-200 group inline-flex py-6 text-xl font-medium tracking-tight transition focus-visible:outline-none sm:py-8 sm:text-2xl"
             >
               <div class="group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 flex flex-1 items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2">
                 <div class="flex items-center gap-6">
