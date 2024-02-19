@@ -109,7 +109,7 @@ const bottomLinks = [
 </style>
 
 <footer
-  class="bg-primary-800/20 dark:bg-primary-700/20 py-16 lg:mt-20 lg:py-20"
+  class="bg-slate-900 text-white py-16 lg:mt-20 lg:py-20"
   aria-labelledby="footer-heading"
 >
   <h2 id="footer-heading" class="sr-only">Footer</h2>
@@ -118,19 +118,18 @@ const bottomLinks = [
       <div class="flex w-full max-w-xl flex-col items-start justify-center gap-6 sm:gap-8">
         <img
           class="h-8 xs:h-20 sm:h-24 w-auto"
-          :src="$store.theme.isDark ? '/ax-logo-white.svg' : '/ax-logo-purp.svg'"
-          alt="Aidxn Design - Gold Coast Web Design"
+          :src="$store.theme.isDark ? 'be/br-logo-dark.svg' : 'be/br-logo-dark.svg'"
+          alt="Burrowin Electrical - Gold Coast Electrician"
         />
-        <p class="text-primary-950 dark:text-primary-200 text-lg sm:text-xl">
-          Leaders on the Gold Coast in web design, SEO, graphic design and digital marketing.
-          Web design done face-to-face.
+        <p class="text-lg sm:text-xl">
+          Over 15 years of quality electical work, completing both local to nation-wide contracts with a quality finish, everytime.
         </p>
-        <p class="text-primary-950 dark:text-primary-200 text-lg sm:text-xl">ABN: 13 392 753 698</p>
-        <p class="text-primary-950 dark:text-primary-200 text-lg sm:text-xl">© 2023 Aidxn Design</p>
+        <p class="text-lg sm:text-xl">ABN: X</p>
+        <p class="text-lg sm:text-xl">© 2024 Burrowin Electrical</p>
       </div>
 
-      <!-- Bottom links -->
-      <div class="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 justify-end">
+      <!-- Bottom links - Currently Hidden -->
+      <div class="hidden grid w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 justify-end">
         {
           bottomLinks.map((group) => (
             <div class="flex flex-col justify-center gap-4">
