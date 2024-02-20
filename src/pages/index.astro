@@ -4,15 +4,18 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/home/Hero.astro';
 import FullScreenSliderHero from '../components/home/Slot-FullscreenSlider.astro';
 
+import Services from '../components/home/Section-Services.astro';
+
 import Process from '../components/home/Section-Process.astro';
 import Intro from '../components/home/Section-Numbers-Intro.astro';
 import Clients from '../components/home/Section-IconGrid-Accreditors.astro';
 
 import CtaContactShort from '../components/home/Cta-ContactShort.astro';
 
-import WebIntro from '../components/home/Basic-Intro-Web.astro';
-import PricingWeb from '../components/pricing/PricingTable-Duo-Web.astro';
-import WebSliddy from '../components/home/Sliddy-Sml-Web.astro';
+import SlotImgGsap from '../components/home/slot-img.astro';
+import SlotImgReverseGsap from '../components/home/slot-img-rev.astro';
+
+import SlotColourBlock from '../components/home/Slot-Colourblock.astro';
 
 import MarketIntro from '../components/home/Basic-Intro-Market.astro';
 import PricingMarket from '../components/pricing/PricingTable-Duo-Market.astro';
@@ -20,7 +23,6 @@ import MarketingSliddy from '../components/home/Sliddy-Sml-Marketing.astro';
 
 import CtaContactServices from '../components/home/Cta-ContactServices.astro';
 
-import BlogPosts from '../components/home/Section-Services.astro';
 
 
 let backgroundUrl = 'url(/be/qual-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
@@ -33,7 +35,7 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
 ---
 
 <Layout
-  description="Over 10 years professional experience in website design and digital marketing. Where code meets design."
+  description="Servicing local and nation-wide electrical contracts with the highest of quality. A Gold Coast based Electrician you can trust with over 15 years of experience."
   title="Home · Burrowin Electrical"
 >
   
@@ -82,10 +84,63 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
     </Fragment>
   </FullScreenSliderHero>
   
- 
 
-  <BlogPosts />
-  <Clients />
+  <Services />
+
+  <SlotColourBlock> 
+    <Fragment slot="smltitle">
+      Council and National Contracts
+    </Fragment>
+    <Fragment slot="title">
+      Electrical Work for Temporary Installations
+    </Fragment>
+    <Fragment slot="desc">
+      Handling power with complete safety around paetrons. Fast bump-in and bump-out electrical work, held to an accountable quality.
+    </Fragment>
+    <Fragment slot="cover">
+      <img
+        src="/be/council-wide.webp"
+        class="w-full"
+        alt="custom shopify website designer on the Gold Coast. Improving sales and conversion rate for shopify business owners by offering website design, brand design and digital marketing management."
+      />
+    </Fragment>
+  </SlotColourBlock>
+
+  <SlotImgGsap> 
+    <Fragment slot="smltitle">
+      Maximising your use of Shopify
+    </Fragment>
+    <Fragment slot="title">
+      Elegant Kitchen Designs
+    </Fragment>
+    <Fragment slot="desc">
+      Enjoy the center-piece of your home more with modern installations.
+    </Fragment>
+    <Fragment slot="cover">
+      <img
+        src="/be/kitchens-coloured.webp"
+        class="w-full"/>
+    </Fragment>
+  </SlotImgGsap>
+
+  <SlotImgReverseGsap> 
+    <Fragment slot="smltitle">
+      Maximising your use of Shopify
+    </Fragment>
+    <Fragment slot="title">
+      Beautiful Bathroom Installations
+    </Fragment>
+    <Fragment slot="desc">
+      High quality electrical works for bathroom builds and renovations.
+    </Fragment>
+    <Fragment slot="cover">
+      <img
+        src="/be/bathrooms-coloured.webp"
+        class="w-full"
+        alt="custom shopify website designer on the Gold Coast. Improving sales and conversion rate for shopify business owners by offering website design, brand design and digital marketing management."
+      />
+    </Fragment>
+  </SlotImgReverseGsap>
 
   <CtaContactShort />
 

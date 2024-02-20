@@ -1,4 +1,4 @@
-<div class="flex flex-col lg:flex-row justify-center items-start md:items-center max-w-7xl mx-auto gap-12 my-24 px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col-reverse lg:flex-row-reverse justify-center items-start md:items-center max-w-7xl mx-auto gap-12 my-24 px-4 sm:px-6 lg:px-8">
   
   <div id="leftContainer" class="block w-full lg:w-2/3 xl:w-1/2 max-w-3xl my-6 pb-12">
     <h2 class="font-thin pb-4 text-sm lg:text-base tracking-widest uppercase">
@@ -17,3 +17,21 @@
   </div>
 
 </div>
+
+<script>
+  // First live gsap animation with ScrollTrigger
+gsap.set(".scrollImageAnimation2", { xPercent: 10, opacity: 0 });
+
+gsap.to(".scrollImageAnimation2", {
+  xPercent: 0,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".scrollImageAnimation",
+    start: "top 85%",
+    end: "bottom 85%",
+    scrub: true,
+    markers: false,
+    id: "slot-img-gsap"
+  }
+});
+</script>
