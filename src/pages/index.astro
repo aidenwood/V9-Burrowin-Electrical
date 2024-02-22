@@ -17,6 +17,10 @@ import SlotImgReverseGsap from '../components/home/slot-img-rev.astro';
 
 import SlotColourBlock from '../components/home/Slot-ColourBlock.astro';
 
+import FaqHome from '../components/home/Faq-Home.astro'
+
+
+
 import MarketIntro from '../components/home/Basic-Intro-Market.astro';
 import PricingMarket from '../components/pricing/PricingTable-Duo-Market.astro';
 import MarketingSliddy from '../components/home/Sliddy-Sml-Marketing.astro';
@@ -87,28 +91,12 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
 
   <Services />
 
-  <SlotColourBlock> 
-    <Fragment slot="smltitle">
-      Council and National Contracts
-    </Fragment>
-    <Fragment slot="title">
-      Electrical Work for Temporary Installations
-    </Fragment>
-    <Fragment slot="desc">
-      Handling power with complete safety around paetrons. Fast bump-in and bump-out electrical work, held to an accountable quality.
-    </Fragment>
-    <Fragment slot="cover">
-      <img
-        src="/be/council-wide.webp"
-        class="w-full"
-        alt="custom shopify website designer on the Gold Coast. Improving sales and conversion rate for shopify business owners by offering website design, brand design and digital marketing management."
-      />
-    </Fragment>
-  </SlotColourBlock>
 
+  <CtaContactShort />
+  
   <SlotImgGsap> 
     <Fragment slot="smltitle">
-      Maximising your use of Shopify
+      Experienced Kitchen Electrictian
     </Fragment>
     <Fragment slot="title">
       Elegant Kitchen Designs
@@ -125,7 +113,7 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
 
   <SlotImgReverseGsap> 
     <Fragment slot="smltitle">
-      Maximising your use of Shopify
+      Experienced Bathroom Electrician
     </Fragment>
     <Fragment slot="title">
       Beautiful Bathroom Installations
@@ -142,6 +130,26 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
     </Fragment>
   </SlotImgReverseGsap>
 
-  <CtaContactShort />
+  <SlotColourBlock> 
+    <Fragment slot="smltitle">
+      Council and National Contracts
+    </Fragment>
+    <Fragment slot="title">
+      Servicing Government, Council and Residential Electrical Contracts.
+    </Fragment>
+    <Fragment slot="desc">
+      Handling power with complete safety around paetrons. Fast bump-in and bump-out electrical work, held to an accountable quality.
+    </Fragment>
+    <Fragment slot="cover">
+      <img
+        src="/be/council-wide.webp"
+        class="w-full"
+        alt="custom shopify website designer on the Gold Coast. Improving sales and conversion rate for shopify business owners by offering website design, brand design and digital marketing management."
+      />
+    </Fragment>
+  </SlotColourBlock>
+
+
+  <FaqHome />
 
 </Layout>

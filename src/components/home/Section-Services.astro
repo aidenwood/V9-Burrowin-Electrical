@@ -7,7 +7,7 @@ const stats = [
     link: '#faq',
   },
   {
-    name: 'New Builds',
+    name: 'Residential Builds',
     desc: 'Building new homes with care. Trusted by hundreds of happy clients for our quality of work.',
     value: 'E-Commerce / Shopify Optimisation',
     link: '#faq',
@@ -54,19 +54,6 @@ const stats = [
     value: 'Music Event Web Design & Marketing',
     link: '#faq',
   },
-  {
-    name: 'Switchboard Upgrades',
-    desc: 'Upgrade your power hub for maximum power and surge safety in your home.',
-    value: 'Music Event Web Design & Marketing',
-    link: '#faq',
-  },
-  
-  {
-    name: 'Maintenance & Repairs',
-    desc: 'From flickering lights to test and tags, trust us to keep your home running smoothly.',
-    value: 'Music Event Web Design & Marketing',
-    link: '#faq',
-  },
 ];
 ---
 
@@ -100,14 +87,14 @@ const stats = [
     </div>
     <div class="w-full flex flex-col justify-center">
 
-      <dl class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
+      <dl class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 my-12">
         {
           stats.map((stat) => (
           <a href={stat.link}>  
             <div class="border-primary-900/10 dark:border-primary-300/10 hover:bg-primary-900/10 hover:dark:bg-primary-300/10 duration-200 rounded-sm border px-4 md:px-6 py-8 sm:py-12 h-full flex flex-col justify-start gap-4">
               <dt class="hidden text-xs uppercase font-thin tracking-widest">{stat.value}</dt>
               <dd class="text-lg xs:text-xl lg:text-2xl font-medium leading-loose tracking-tighter xs:tracking-tight">{stat.name}</dd>
-              <p class="text-primary-950/80 dark:text-primary-200/80 text-base leading-6">
+              <p class="text-primary-900 dark:text-primary-100 max-w-lg text-base leading-6">
                     {stat.desc}
                   </p>
             </div>

@@ -15,13 +15,13 @@ const bottomLinks = [
         isExternal: false,
       },
       {
-        name: 'Pricing',
-        href: '/pricing',
+        name: 'Contact',
+        href: '/contact',
         isExternal: false,
       },
       {
-        name: 'Contact',
-        href: '/contact',
+        name: 'Enquire',
+        href: '/enquire',
         isExternal: false,
       },
     ],
@@ -30,52 +30,28 @@ const bottomLinks = [
     header: 'Services',
     links: [
       {
-        name: 'Graphic Design',
-        href: '/graphic-design',
+        name: 'Residential',
+        href: 'services/residential',
         isExternal: false,
       },
       {
-        name: 'Web Design',
-        href: '/web-design',
+        name: 'Commercial',
+        href: 'services/commercial',
         isExternal: false,
       },
       {
-        name: 'Digital Marketing',
-        href: '/digital-marketing',
+        name: 'Data and CCTV',
+        href: 'services/data-and-cctv',
         isExternal: false,
       },
       {
-        name: 'Management',
-        href: '/moonshot-plan',
+        name: 'Access Control',
+        href: 'services/access-control',
         isExternal: false,
       },
     ],
   },
-  {
-    header: 'Results',
-    links: [
-      {
-        name: 'Medical Web Design',
-        href: '/web-design/previous-work/esteem-clinics/',
-        isExternal: false,
-      },
-      {
-        name: 'E-Commerce Web Design',
-        href: 'https://blog.aidxn.com/posts/ecommerce-design-tricks/',
-        isExternal: false,
-      },
-      {
-        name: 'Events Web Design',
-        href: '/web-design/previous-work/the-boogie-collective',
-        isExternal: false,
-      },
-      {
-        name: 'Real Estate Web Design',
-        href: '/web-design/previous-work/ball-realty',
-        isExternal: false,
-      },
-    ],
-  },
+  
   {
     header: 'Social',
     links: [
@@ -115,31 +91,34 @@ const bottomLinks = [
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div id="contain" class="mx-auto w-full px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col gap-16 md:gap-24 xl:flex-row">
-      <div class="flex w-full max-w-xl flex-col items-start justify-center gap-6 sm:gap-8">
+      <div class="flex w-full max-w-4xl flex-col items-start justify-center gap-6 sm:gap-8">
         <img
-          class="h-8 xs:h-20 sm:h-24 w-auto"
-          :src="$store.theme.isDark ? 'be/br-logo-dark.svg' : 'be/br-logo-dark.svg'"
+          class="h-16 sm:h-36 md:h-40 w-auto"
+          :src="$store.theme.isDark ? 'be/br-logo-sqr.svg' : 'be/br-logo-sqr.svg'"
           alt="Burrowin Electrical - Gold Coast Electrician"
         />
-        <p class="text-lg sm:text-xl">
+        <p class="text-lg sm:text-xl max-w-3xl">
           Over 15 years of quality electical work, completing both local to nation-wide contracts with a quality finish, everytime.
         </p>
-        <p class="text-lg sm:text-xl">ABN: X</p>
-        <p class="text-lg sm:text-xl">© 2024 Burrowin Electrical</p>
+        <div class="flex flex-col gap-4 text-sm md:text-base">
+          <p class="">admin@burrowinelectrical.com.au</p>
+          <p class="">ABN: 95656332295</p>
+          <p class="">© 2024 Burrowin Electrical</p>
+        </div>
       </div>
 
       <!-- Bottom links - Currently Hidden -->
-      <div class="hidden grid w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 justify-end">
+      <div class="grid w-full grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-3 justify-end">
         {
           bottomLinks.map((group) => (
             <div class="flex flex-col justify-center gap-4">
-              <p class="text-xl md:text-sm sm:text-base font-medium">{group.header}</p>
+              <p class="text-xl md:text-md sm:text-lg font-medium">{group.header}</p>
               <ul role="list" class="flex flex-col gap-3">
                 {group.links.map((link) => (
                   <li>
                     <a
                       href={link.href}
-                      class="focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200 inline-flex items-center gap-1 rounded-md text-lg md:text-sm xl:text-base hover:underline focus-visible:outline focus-visible:outline-2"
+                      class="focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200 inline-flex items-center gap-1 rounded-md text-sm md:text-base hover:underline focus-visible:outline focus-visible:outline-2"
                       target={link.isExternal ? '_blank' : undefined}
                       rel={link.isExternal ? 'noopener' : undefined}
                     >
