@@ -70,15 +70,15 @@ const stats = [
           <!-- Mission description -->
           
               <h4 class="text-xs uppercase font-thin tracking-widest">
-                Electrical Work you can trust
+                The Gold Coast Electrician you can trust
               </h4>
-              <h3 class="text-3xl sm:text-4xl font-medium tracking-tight">Our Services</h3>
+              <h3 class="text-3xl sm:text-4xl font-medium tracking-tight">Wide Range of Electrical Services</h3>
               <div class=" ">
                 <a
                     href="/services"
                     class="mt-2 mr-4 bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex items-center justify-center rounded-md border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                   >
-                    All Services
+                    Services
                 </a>
               </div>
             
@@ -87,14 +87,14 @@ const stats = [
     </div>
     <div class="w-full flex flex-col justify-center">
 
-      <dl class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 my-12">
+      <dl class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-12">
         {
           stats.map((stat) => (
           <a href={stat.link}>  
             <div class="border-primary-900/10 dark:border-primary-300/10 hover:bg-primary-900/10 hover:dark:bg-primary-300/10 duration-200 rounded-sm border px-4 md:px-6 py-8 sm:py-12 h-full flex flex-col justify-start gap-4">
               <dt class="hidden text-xs uppercase font-thin tracking-widest">{stat.value}</dt>
               <dd class="text-lg xs:text-xl lg:text-2xl font-medium leading-loose tracking-tighter xs:tracking-tight">{stat.name}</dd>
-              <p class="text-primary-900 dark:text-primary-100 max-w-lg text-base leading-6">
+              <p class="hidden lg:block text-primary-900 dark:text-primary-100 max-w-lg text-base leading-6">
                     {stat.desc}
                   </p>
             </div>

@@ -2,9 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 
 import Hero from '../components/home/Hero.astro';
-import FullScreenSliderHero from '../components/home/Slot-FullscreenSlider.astro';
+import FullScreenSliderHero from '../components/home/Slot-ExtraLargeSlider.astro';
 
 import Services from '../components/home/Section-Services.astro';
+
+import Testimonials from '../components/home/Section-Testimonials.astro';
 
 import Process from '../components/home/Section-Process.astro';
 import Intro from '../components/home/Section-Numbers-Intro.astro';
@@ -51,7 +53,7 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
       Modern Kitchen Electrical Works
     </Fragment>
     <Fragment slot="title">
-      Modern Designs
+      Experts at Modern Electrical Solutions
     </Fragment>
     <Fragment slot="desc">
       With over 15 years of certified electrical expirience, you can trust us for complex jobs.
@@ -61,7 +63,7 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
       Experienced, Professional Electrictians
     </Fragment>
     <Fragment slot="title2">
-      Quality Finishes
+      High-Quality Work and Finishes
     </Fragment>
     <Fragment slot="desc2">
       We take complete pride in our work, every single time. We love what we do, and we love doing it well!
@@ -71,7 +73,7 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
       Compliant Outdoor Electrical Installations
     </Fragment>
     <Fragment slot="title3">
-      Outdoor Installations
+      Outdoor, Water-Proof Installations
     </Fragment>
     <Fragment slot="desc3">
       We work with a range of businesses to install certified outdoor electrical installations.
@@ -81,7 +83,7 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
       Temporary and Permenant Council Installations
     </Fragment>
     <Fragment slot="title4">
-      Council Installations
+      Events and Temporary Installations
     </Fragment>
     <Fragment slot="desc4">
       Helping bring to life travelling art installations and the like for Brisbane and the Gold Coast.
@@ -89,20 +91,64 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
   </FullScreenSliderHero>
   
 
+
   <Services />
-
-
-  <CtaContactShort />
+  <Testimonials />
   
+
+
+
   <SlotImgGsap> 
     <Fragment slot="smltitle">
-      Experienced Kitchen Electrictian
+      Quality Residential Electrical Work
     </Fragment>
     <Fragment slot="title">
-      Elegant Kitchen Designs
+      Stunning New Home Builds
     </Fragment>
     <Fragment slot="desc">
-      Enjoy the center-piece of your home more with modern installations.
+      At Burrowin Electrical, we redefine residential living through our specialized electrical contracts and builds on the Gold Coast. With a commitment to quality builds for longevity and an uncompromising attention to detail, our skilled electricians transform homes into safe, energy-efficient havens. From custom wiring solutions to comprehensive electrical renovations, Burrowin Electrical is your trusted partner in creating residences that seamlessly blend comfort, functionality, and cutting-edge electrical craftsmanship.
+    </Fragment>
+    <Fragment slot="cover">
+      <img
+        src="/be/newhomes-coloured.webp"
+        class="w-full"/>
+    </Fragment>
+  </SlotImgGsap>
+
+  <SlotImgReverseGsap> 
+    <Fragment slot="smltitle">
+      Quality Commerical Electrical Work
+    </Fragment>
+    <Fragment slot="title">
+      Experts in Commercial Electrical
+    </Fragment>
+    <Fragment slot="desc">
+      Burrowin Electrical stands as the premier choice for commercial electrical contracts and builds on the Gold Coast. Our expert team combines precision and innovation to deliver top-tier electrical solutions tailored for businesses. From office wiring to advanced electrical infrastructure, trust Burrowin Electrical to power your commercial ventures with reliability and efficiency, setting the gold standard for electrical excellence in the corporate landscape.
+    </Fragment>
+    <Fragment slot="cover">
+      <img
+        src="/be/bathrooms-coloured.webp"
+        class="w-full"
+        alt="custom shopify website designer on the Gold Coast. Improving sales and conversion rate for shopify business owners by offering website design, brand design and digital marketing management."
+      />
+    </Fragment>
+  </SlotImgReverseGsap>
+  
+
+  <CtaContactShort />
+
+
+
+
+  <SlotImgGsap> 
+    <Fragment slot="smltitle">
+      Experienced Access Control Installers
+    </Fragment>
+    <Fragment slot="title">
+      Modern Access Control Systems
+    </Fragment>
+    <Fragment slot="desc">
+      Experience the pinnacle of security with Burrowin Electrical's Access Control solutions on the Gold Coast. Our expert team crafts customized access control systems, utilizing state-of-the-art technology to fortify your premises. From biometric access points to sophisticated entry management, Burrowin Electrical sets the standard for comprehensive and secure access control solutions tailored to your unique needs.
     </Fragment>
     <Fragment slot="cover">
       <img
@@ -113,13 +159,13 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
 
   <SlotImgReverseGsap> 
     <Fragment slot="smltitle">
-      Experienced Bathroom Electrician
+      Expert Data and CCTV Electrictian
     </Fragment>
     <Fragment slot="title">
-      Beautiful Bathroom Installations
+      Improve Security with CCTV Installations
     </Fragment>
     <Fragment slot="desc">
-      High quality electrical works for bathroom builds and renovations.
+      Burrowin Electrical excels in providing top-tier Data and CCTV Electrical Contracts on the Gold Coast, ensuring businesses stay connected and secure. Our skilled electricians specialize in precision installations, guaranteeing reliable data connectivity and cutting-edge CCTV solutions for enhanced safety and peace of mind.
     </Fragment>
     <Fragment slot="cover">
       <img
@@ -130,25 +176,26 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
     </Fragment>
   </SlotImgReverseGsap>
 
+
   <SlotColourBlock> 
     <Fragment slot="smltitle">
-      Council and National Contracts
+      Electrical Emergency Call Outs
     </Fragment>
     <Fragment slot="title">
-      Servicing Government, Council and Residential Electrical Contracts.
+      We're Here to Help!
     </Fragment>
     <Fragment slot="desc">
-      Handling power with complete safety around paetrons. Fast bump-in and bump-out electrical work, held to an accountable quality.
+      If you have an urgent electrical need, contact us with information about your problem using our website or simple call me, Taylor Burrowin on 041212121. I'm always happy to come out to emergencies where possible.
     </Fragment>
     <Fragment slot="cover">
       <img
-        src="/be/council-wide.webp"
+        src="/be/taylor-headshot.webp"
         class="w-full"
-        alt="custom shopify website designer on the Gold Coast. Improving sales and conversion rate for shopify business owners by offering website design, brand design and digital marketing management."
+        alt="Taylor Burrowin from Burrowin Electrical - A Gold Coast based Electrician with over 15 years of experience."
       />
     </Fragment>
   </SlotColourBlock>
-
+  
 
   <FaqHome />
 

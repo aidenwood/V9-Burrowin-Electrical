@@ -1,7 +1,7 @@
 ---
 import Cta from '../../components/home/Cta-ContactShort.astro';
 import SlotHero from '../../components/home/Slot-PageHero.astro';
-import SectionHeadImg from "../../components/home/Slot-ImgFadeReverse-Gsap.astro";
+import SectionHeadImg from "../../components/home/slot-img.astro";
 import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
 import Process from '../../components/home/Section-Process.astro';
 import FirstProcess from '../../components/home/Process-Sml.astro';
@@ -16,22 +16,20 @@ import Pricing from '../../components/pricing/PricingTable-Wordpress.astro';
 
 <Layout
   description="Wordpress Websites developed and maintained on the Gold Coast, Australia."
-  title="Wordpress Website Design · Aidxn"
+  title="Access Control & CCTV Video Security Installations · Burrowin Electrical"
 >
 
     <SlotHero>
       <Fragment slot="smltitle">
-        Gold Coast Wordpress Design Expert
+        Gold Coast Access Control & CCTV Video Security Installations
       </Fragment>
       <Fragment slot="title">
-        Wordpress Web Design
+        Access Control
       </Fragment>
       <Fragment slot="desc">
         Trust over 6 years experience improving conversion rates in a range of industries. All while offering a fresh take on web design and digital marketing in general.
       </Fragment>
     </SlotHero>
-
-    <Pricing />
 
 
 
@@ -41,10 +39,10 @@ import Pricing from '../../components/pricing/PricingTable-Wordpress.astro';
         <a href="#">  
           <BlogPost>
             <Fragment slot="smltitle">
-              Case Study
+              Electrical Partner Product
             </Fragment>
             <Fragment slot="title">
-              Effective Real Estate Web Design & Listing Management Solution, Powered by Wordpress and Rex.
+              Clevertronics Electical Access Control Device
             </Fragment>
             <Fragment slot="desc">
               Improving search engine ranking, pageload speed and website UX before moving onto scaling CPC ads.
@@ -56,7 +54,7 @@ import Pricing from '../../components/pricing/PricingTable-Wordpress.astro';
         <a href="https://blog.aidxn.com/posts/website-pageload-optimisation/">  
           <BlogPost>
             <Fragment slot="smltitle">
-              Case Study
+              Electrical Partner Product
             </Fragment>
             <Fragment slot="title">
               5.2 seconds to 1.2 seconds. Wordpress Web Performance Optimisation, with Heavy Media Content.
@@ -71,8 +69,7 @@ import Pricing from '../../components/pricing/PricingTable-Wordpress.astro';
 
 
 
-
-    <FirstProcess />
+    
 
           <SectionHeadImg>
             <Fragment slot="smltitle">
@@ -112,28 +109,9 @@ import Pricing from '../../components/pricing/PricingTable-Wordpress.astro';
             </Fragment>
           </SectionHeadSecImg>
 
-          <SectionHeadImg>
-            <Fragment slot="smltitle">
-              WordPress Maintenance and Ongoing Support
-            </Fragment>
-            <Fragment slot="title">
-              Keeping your site running smoothly.
-            </Fragment>
-            <Fragment slot="desc">
-              A beautiful website is not a one-time endeavor; it's an ongoing commitment. I offer WordPress maintenance and support services to ensure your site is always in peak condition. From regular updates and security checks to troubleshooting any issues that may arise, I'm here to provide you with peace of mind. Your website will remain secure, up-to-date, and fully functional, so you can focus on what you do best – growing your business and delighting your audience.
-            </Fragment>
-            <Fragment slot="cover">
-              <img
-                src="/works/ax-sqr-cpc-results.webp"
-                class="w-full"
-                alt="Optimisation of Wordpress websites to quickly improve conversion rate and lower ad costs and improve SEO. All without needing to completely redesign a website. Saving your business time and money. Ongoing support and maintanence offered."
-              />
-            </Fragment>
-          </SectionHeadImg>
+          <Pricing />
 
 
-  
-  <Process />
   <Cta />
 
 </Layout>

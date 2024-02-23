@@ -3,7 +3,7 @@ import '@fontsource/inter/latin-400.css';
 import '@fontsource/inter/latin-500.css';
 import { ViewTransitions } from 'astro:transitions';
 import Footer from '../components/layout/Footer.astro';
-import Header from '../components/layout/Header.astro';
+import Header from '../components/layout/Header-SideMenu.astro';
 import type { arrayOutputType } from 'astro/zod';
 
 
@@ -51,7 +51,7 @@ const canonicalURL = Astro.props.canonicalURL || new URL(Astro.url.pathname, Ast
     <ViewTransitions />
   </head>
   <body 
-    class="bg-primary-50/30 text-slate-950 dark:bg-black dark:text-primary-50 antialiased transition" 
+    class="bg-white text-black dark:bg-black dark:text-white antialiased transition" 
   >
     <Header />
     <main >
