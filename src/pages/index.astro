@@ -37,9 +37,24 @@ let backgroundUrl3 = 'url(/be/outd-hero.webp)' // Define image for Slot-HeroFull
 let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
 
 
-
 ---
+<style>
+.video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
 
+.video-container iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+</style>
 <Layout
   description="Servicing local and nation-wide electrical contracts with the highest of quality. A Gold Coast based Electrician you can trust with over 15 years of experience."
   title="Home · Burrowin Electrical"
@@ -151,7 +166,11 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
       Experienced team for installing modern and customized access control systems, utilizing state-of-the-art technology to fortify your premises. Partnering with Cura1 to provide high-quality access control products. Burrowin Electrical sets the standard for secure access control installations.
     </Fragment>
     <Fragment slot="cover">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/4D4Ckg-cq0U?si=TrpYkWCgq0tvqCUr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="video-wrap">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4D4Ckg-cq0U?si=TrpYkWCgq0tvqCUr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
     </Fragment>
   </SlotImgGsap>
 
@@ -166,7 +185,11 @@ let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroF
       Partnering with Cura1 to offer businesses industry-leading security products from silent alarms for schools and shopping centres. Skilled electricians specializing in Cura1 product installations, guaranteeing cutting-edge security solutions for safety and peace of mind.
     </Fragment>
     <Fragment slot="cover">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/yScAFtQoero?si=MZwTb-e_eYk7NG5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="video-wrap">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yScAFtQoero?si=MZwTb-e_eYk7NG5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
     </Fragment>
   </SlotImgReverseGsap>
 
