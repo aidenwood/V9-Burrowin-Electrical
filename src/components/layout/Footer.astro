@@ -30,12 +30,12 @@ const bottomLinks = [
     header: 'Services',
     links: [
       {
-        name: 'Residential',
+        name: 'Residential Electrical',
         href: 'services/residential',
         isExternal: false,
       },
       {
-        name: 'Commercial',
+        name: 'Commercial Electrical',
         href: 'services/commercial',
         isExternal: false,
       },
@@ -51,28 +51,53 @@ const bottomLinks = [
       },
     ],
   },
-  
   {
-    header: 'Social',
+    header: 'Service Areas',
     links: [
       {
-        name: 'Github',
-        href: 'https://github.com/aidenwood',
-        isExternal: true,
+        name: 'Brisbane',
+        href: 'service-areas/brisbane',
+        isExternal: false,
       },
       {
-        name: 'Instagram',
-        href: 'https://instagram.com/aidxn.design',
+        name: 'Gold Coast',
+        href: 'service-areas/gold-coast',
+        isExternal: false,
+      },
+      {
+        name: 'Sunshine Coast',
+        href: 'service-areas/sunshine-coast',
+        isExternal: false,
+      },
+      {
+        name: 'Australia-Wide',
+        href: 'service-areas/access-control',
+        isExternal: false,
+      },
+    ],
+  },
+  {
+    header: 'Links',
+    links: [
+     
+      {
+        name: 'Google',
+        href: 'https://maps.app.goo.gl/YTX8RA2Thcy5NAeW6',
         isExternal: true,
       },
       {
         name: 'Facebook',
-        href: 'https://facebook.com/aidxn.design',
+        href: 'https://facebook.com/burrowinelectrical',
         isExternal: true,
       },
       {
-        name: 'Twitter',
-        href: 'https://twitter.com/aidxn.design',
+        name: 'LTEK',
+        href: 'https://ltek.com.au/',
+        isExternal: true,
+      },
+      {
+        name: 'Cura1',
+        href: 'https://cura1.com/',
         isExternal: true,
       },
     ],
@@ -91,13 +116,13 @@ const bottomLinks = [
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div id="contain" class="mx-auto w-full px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col gap-16 md:gap-24 xl:flex-row">
-      <div class="flex w-full max-w-4xl flex-col items-start justify-center gap-6 sm:gap-8">
+      <div class="flex w-full max-w-2xl flex-col items-start justify-center gap-6 sm:gap-8">
         <img
-          class="h-16 sm:h-36 md:h-40 w-auto"
+          class="h-24 sm:h-36 md:h-48 w-auto"
           :src="$store.theme.isDark ? '/br-logo-sqr.svg' : '/br-logo-sqr.svg'"
           alt="Burrowin Electrical - Gold Coast Electrician"
         />
-        <p class="text-lg sm:text-xl max-w-3xl">
+        <p class="text-lg sm:text-xl max-w-xl">
           Over 15 years of quality electical work, completing both local to nation-wide contracts with a quality finish, everytime.
         </p>
         <div class="flex flex-col gap-4 text-sm md:text-base">
@@ -108,7 +133,7 @@ const bottomLinks = [
       </div>
 
       <!-- Bottom links - Currently Hidden -->
-      <div class="grid w-full grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-3 justify-end">
+      <div class="grid w-full gap-x-8 gap-y-16 grid-cols-1 xs:grid-cols-2 justify-end">
         {
           bottomLinks.map((group) => (
             <div class="flex flex-col justify-center gap-4">
