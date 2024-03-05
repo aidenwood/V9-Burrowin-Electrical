@@ -1,90 +1,178 @@
 ---
 import Cta from '../../components/home/Cta-ContactShort.astro';
-import SlotHero from '../../components/home/Slot-PageHero.astro';
-import SectionHeadImg from "../../components/home/Slot-ImgFadeReverse-Gsap.astro";
+import SlotHero from '../../components/home/Slot-HeroFullscreen.astro';
+
+import FullScreenSlider from "../../components/home/Slot-ExtraLargeSlider.astro";
+let heroBackgroundUrl = 'url(/be/kitchens-coloured.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+
+let backgroundUrl = 'url(/be/qual-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl2 = 'url(/be/kitch-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl3 = 'url(/be/outd-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+
+
+import Partners from "../../components/home/Section-Partners.astro";
+
+import SectionHeadImg from "../../components/home/slot-img.astro";
 import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
+
+import Faqs from "../../components/home/Faq-Residential.astro";
+
 import Process from '../../components/home/Section-Process.astro';
 import FirstProcess from '../../components/home/Process-Sml.astro';
+import BlogPost from "../../components/home/Slot-BlogPost-Single.astro";
 import Layout from '../../layouts/Layout.astro';
+import Pricing from '../../components/pricing/PricingTable-Wordpress.astro';
+
 ---
+<style>
+  #contain { max-width: 1920px; }
+</style>
 
 <Layout
-  description="For over 6 years we have specialised in UX-focused web design. Promoting user experience design choices to improve monthly sales. Highly branded website design that doesn't sacrifice on user experience is the fastest way for small businesses to become memorable brands in our opinion."
-  title="Data and CCTV · Burrowin Electrical"
+  description="Burrowin Electrical is your trusted partner for all your data and CCTV electrical needs. Our team of highly skilled and licensed electricians is dedicated to providing exceptional service."
+  title="Data and CCTV Electricians · Burrowin Electrical"
 >
 
-    <SlotHero>
+    <SlotHero heroBackgroundUrl={heroBackgroundUrl}>
       <Fragment slot="smltitle">
-        Gold Coast Data & CCTV Electrical Installations
+        Data and CCTV Electrictians and Electrical Installations
       </Fragment>
       <Fragment slot="title">
-        Data and CCTV
+        Improve Security with CCTV or Data Installations for Your Home.
       </Fragment>
       <Fragment slot="desc">
-        For over 6 years we have specialised in UX-focused web design. Promoting user experience design choices to improve monthly sales. Highly branded website design that doesn't sacrifice on user experience is the fastest way for small businesses to become memorable brands in our opinion.
+        Burrowin Electrical is your trusted partner for all your data and CCTV cable electrical needs. Our team of highly skilled and licensed electricians is dedicated to providing exceptional service, ensuring the safety and functionality of your home's electrical system.
       </Fragment>
     </SlotHero>
 
-    <FirstProcess />
+
+    
+  
+  
+    <div id="contain" class="mx-auto flex flex-col lg:flex-row my-24">
+      <div class="w-full lg:w-1/2 my-4">
+        <a href="/contact">  
+          <BlogPost>
+            <Fragment slot="smltitle">
+              Partner Product
+            </Fragment>
+            <Fragment slot="title">
+              Clevertronics Access Control
+            </Fragment>
+            <Fragment slot="desc">
+              Clevertronics are market leading specialists in emergency exit lighting and automated monitoring. We are partnered to install their products proffesionally.
+            </Fragment>
+          </BlogPost>
+        </a>
+      </div>
+      <div class="w-full lg:w-1/2 my-4">
+        <a href="/contact">  
+          <BlogPost>
+            <Fragment slot="smltitle">
+              Partner Product
+            </Fragment>
+            <Fragment slot="title">
+              Cura1 FallAlert System
+            </Fragment>
+            <Fragment slot="desc">
+              Perfect for in homes and assisted living for alerting nurses and carers of a fall. We are partnered to install their products proffesionally.
+            </Fragment>
+          </BlogPost>
+        </a>
+      </div>
+    </div>
+
+    
+
+    <FullScreenSlider backgroundUrl={backgroundUrl} backgroundUrl2={backgroundUrl2} backgroundUrl3={backgroundUrl3} backgroundUrl4={backgroundUrl4}>
+      <Fragment slot="smltitle">
+        Modern Kitchen Electrical Works
+      </Fragment>
+      <Fragment slot="title">
+        Modern Electrical Solutions
+      </Fragment>
+      <Fragment slot="desc">
+        With over 15 years of certified electrical expirience, you can trust us for complex jobs.
+      </Fragment>
+      
+      <Fragment slot="smltitle2">
+        Experienced, Professional Electrictians
+      </Fragment>
+      <Fragment slot="title2">
+        High-Quality Finishes
+      </Fragment>
+      <Fragment slot="desc2">
+        We take complete pride in our work, every single time. We love what we do, and we love doing it well!
+      </Fragment>
+    
+      <Fragment slot="smltitle3">
+        Compliant Water-Proof Electrical Installations
+      </Fragment>
+      <Fragment slot="title3">
+        Water-Proof Installations
+      </Fragment>
+      <Fragment slot="desc3">
+        We work with a range of businesses to install certified outdoor electrical installations.
+      </Fragment>
+  
+      <Fragment slot="smltitle4">
+        Temporary and Permenant Council Installations
+      </Fragment>
+      <Fragment slot="title4">
+        Council & Event Electrictians
+      </Fragment>
+      <Fragment slot="desc4">
+        Helping bring to life travelling art installations and the like for Brisbane and the Gold Coast.
+      </Fragment>
+    </FullScreenSliderHero>
+
+    
 
           <SectionHeadImg>
             <Fragment slot="smltitle">
-              Lead generation optimisation through UX.
+              High-Quality Work at a Fair Price
             </Fragment>
             <Fragment slot="title">
-              Sell more online everyday.
+              Exceptional Service, Fairly Priced.
             </Fragment>
             <Fragment slot="desc">
-              In the digital landscape, lead generation is the lifeblood of your business. My lead generation optimisation tactics are designed to capture and nurture leads effectively. Whether it's through compelling calls to action or seamless user journeys, I'll create a web design that powers your lead generation efforts. Elevate your business with my expertise in UX design.
+              Burrowin Electrical delivers exceptional residential electrical services with a focus on quality and affordability. Our team of licensed and insured electricians utilizes their expertise to ensure your home's electrical system is safe, reliable, and meets your specific needs. We believe everyone deserves access to quality electrical work, which is why we strive to offer competitive prices without compromising on expertise or customer service.
             </Fragment>
             <Fragment slot="cover">
               <img
-                src="/works/ax-sqr-br-render.webp"
+                src="/be/bathrooms-coloured.webp"
                 class="w-full"
-                alt="Website design on the Gold Coast that focused on User Experience. Improving sales and conversion rate through design choices. Easy to use and understand websites that sell."
+                alt="Burrowin Electrical provides high-quality electrical solutions for homes and businesses in your area. We offer a wide range of services, including residential and commercial electrical installations, access control systems, and CCTV installations. Our team of skilled and experienced electricians is dedicated to delivering exceptional service at competitive prices. Whether you need a routine electrical repair or a complex security system installation, Burrowin Electrical is here to help. Contact us today for a free quote!"
               />
             </Fragment>
           </SectionHeadImg>
 
           <SectionHeadSecImg>
             <Fragment slot="smltitle">
-              Revolutionizing Conversion Rate Optimisation
+              Leading Electrical Servicemen
             </Fragment>
             <Fragment slot="title">
-              An expert in improving funnel conversion rate.
+              Highly Skilled Electricians
             </Fragment>
             <Fragment slot="desc">
-              In the realm of web design, conversion rate optimisation (CRO) is where I shine. I'm here to tell you that a visually stunning website is only part of the equation. With CRO techniques, I systematically improve your website's ability to turn visitors into loyal customers. Through data-driven insights, A/B testing, and a deep understanding of user behavior, I can boost your website's performance to reach new heights.
+              Burrowin Electrical prioritizes skill and expertise in every team member.  Our electricians undergo rigorous training and maintain up-to-date certifications, ensuring they possess the knowledge and experience to tackle any residential electrical challenge. This commitment to ongoing learning and development guarantees our customers receive the best possible outcome, no matter the project's complexity.
             </Fragment>
             <Fragment slot="cover">
               <img
-                        src="/works/ax-sqr-interactive.webp"
-                        class="w-full"
-                        alt="Improve marketing results across the board by improving your website sales funnel. We think of each step in the sales and conversion process for your customer. Improving lead generation and sales from your website."
-                      />
+                src="/be/kitchens-coloured.webp"
+                class="w-full"
+                alt="Burrowin Electrical provides high-quality electrical solutions for homes and businesses in your area. We offer a wide range of services, including residential and commercial electrical installations, access control systems, and CCTV installations. Our team of skilled and experienced electricians is dedicated to delivering exceptional service at competitive prices. Whether you need a routine electrical repair or a complex security system installation, Burrowin Electrical is here to help. Contact us today for a free quote!"
+              />
             </Fragment>
           </SectionHeadSecImg>
 
-          <SectionHeadImg>
-            <Fragment slot="smltitle">
-              UX web design that improves your bottom line
-            </Fragment>
-            <Fragment slot="title">
-              Cutting-edge UX web design practices.
-            </Fragment>
-            <Fragment slot="desc">
-              I have always been passionate about crafting the perfect user experience through my UX web design expertise. I understand that the success of your website depends on how seamlessly it guides your visitors. My approach not only enhances your website's aesthetics but also focuses on the user journey and satisfaction. If you want to transform your website into a user-friendly, conversion-driven powerhouse, you've come to the right place.
-            </Fragment>
-            <Fragment slot="cover">
-              <img
-                        src="/works/ax-sqr-snacks.webp"
-                        class="w-full"
-                        alt="Website design for lead generation in the photography and videography industry. High performance website designs for photographers that don't cost a dime. Save money and time with a website design from Aidxn web design."
-                      />
-            </Fragment>
-          </SectionHeadImg>
-  
-  <Process />
+          <Partners />
+
+
   <Cta />
+
+
+  <Faqs />
 
 </Layout>

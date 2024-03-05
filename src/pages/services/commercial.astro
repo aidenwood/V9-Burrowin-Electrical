@@ -1,136 +1,175 @@
 ---
 import Cta from '../../components/home/Cta-ContactShort.astro';
-import SlotHero from '../../components/home/Slot-PageHero.astro';
-import SlotImgGSAP from "../../components/home/Slot-ImgFade-Gsap.astro";
+import SlotHero from '../../components/home/Slot-HeroFullscreen.astro';
+
+import FullScreenSlider from "../../components/home/Slot-ExtraLargeSlider.astro";
+let heroBackgroundUrl = 'url(/be/kitchens-coloured.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+
+let backgroundUrl = 'url(/be/qual-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl2 = 'url(/be/kitch-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl3 = 'url(/be/outd-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+
+
+import Partners from "../../components/home/Section-Partners.astro";
+
+import SectionHeadImg from "../../components/home/slot-img.astro";
 import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
-import SectionHeadImg from "../../components/home/Slot-ImgFadeReverse-Gsap.astro";
+
+import Faqs from "../../components/home/Faq-Residential.astro";
+
 import Process from '../../components/home/Section-Process.astro';
 import FirstProcess from '../../components/home/Process-Sml.astro';
+import BlogPost from "../../components/home/Slot-BlogPost-Single.astro";
 import Layout from '../../layouts/Layout.astro';
-import Pricing from '../../components/pricing/PricingTable-Shopify.astro';
-import SingleBlogPost from '../../components/home/Slot-BlogPost-Single.astro';
+import Pricing from '../../components/pricing/PricingTable-Wordpress.astro';
 
 ---
+<style>
+  #contain { max-width: 1920px; }
+</style>
 
 <Layout
-  description="We have been building custom websites that run on the Shopify platform for over 6 years. One of the leaders in e-commerce management with powerful tools for easy integrations, it absolutely is a winner for larger scale business. Speak to us about a custom Shopify website design today."
-  title="Shopify Website Design · Aidxn"
+  description="Burrowin Electrical is your trusted partner for all your commercial electrical needs. Our team of highly skilled and licensed electricians is dedicated to providing exceptional service."
+  title="Commercial Electrians · Burrowin Electrical"
 >
 
-    <SlotHero>
+    <SlotHero heroBackgroundUrl={heroBackgroundUrl}>
       <Fragment slot="smltitle">
-        Gold Coast Commercial Electrictian
+        Commercial Electrictians and Electrical Installations
       </Fragment>
       <Fragment slot="title">
-        Commercial Electrical
+        Experienced Electricians for Commercial Builds and Refurbishments.
       </Fragment>
       <Fragment slot="desc">
-        We have been building custom websites that run on the Shopify platform for over 6 years. One of the leaders in e-commerce management with powerful tools for easy integrations, it absolutely is a winner for larger scale business. Speak to us about a custom Shopify website design today.
+        Burrowin Electrical is your trusted partner for all your commercial electrical needs. Our team of highly skilled and licensed electricians is dedicated to providing exceptional service, ensuring the safety and functionality of your home's electrical system.
       </Fragment>
     </SlotHero>
-
-
-
-    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
-      <div class="w-full lg:w-1/2">
-        <a href="https://pbwagyu.com/">  
-          <SingleBlogPost>
+    
+  
+  
+    <div id="contain" class="mx-auto flex flex-col lg:flex-row my-24">
+      <div class="w-full lg:w-1/2 my-4">
+        <a href="/contact">  
+          <BlogPost>
             <Fragment slot="smltitle">
-              Case Study
+              Partner Product
             </Fragment>
             <Fragment slot="title">
-              Nation-Wide Shopify B2B Optimisation
+              Clevertronics Access Control
             </Fragment>
             <Fragment slot="desc">
-              Pure Blue Beef have partnered with Aidxn Design for the last 3 years, for scalable B2B and B2C solutions.
+              Clevertronics are market leading specialists in emergency exit lighting and automated monitoring. We are partnered to install their products proffesionally.
             </Fragment>
-          </SingleBlogPost>
+          </BlogPost>
         </a>
       </div>
-      <div class="w-full lg:w-1/2">
-        <a href="https://esteemclinic.com.au/">  
-          <SingleBlogPost>
+      <div class="w-full lg:w-1/2 my-4">
+        <a href="/contact">  
+          <BlogPost>
             <Fragment slot="smltitle">
-              Case Study
+              Partner Product
             </Fragment>
             <Fragment slot="title">
-              Custom Shopify Theme Development
+              Cura1 FallAlert System
             </Fragment>
             <Fragment slot="desc">
-              Taking a 20 year old Gold Coast health brand to selling products nation-wide with a custom Shopify store.
+              Perfect for in homes and assisted living for alerting nurses and carers of a fall. We are partnered to install their products proffesionally.
             </Fragment>
-          </SingleBlogPost>
+          </BlogPost>
         </a>
       </div>
     </div>
 
 
+    <FullScreenSlider backgroundUrl={backgroundUrl} backgroundUrl2={backgroundUrl2} backgroundUrl3={backgroundUrl3} backgroundUrl4={backgroundUrl4}>
+      <Fragment slot="smltitle">
+        Modern Kitchen Electrical Works
+      </Fragment>
+      <Fragment slot="title">
+        Modern Electrical Solutions
+      </Fragment>
+      <Fragment slot="desc">
+        With over 15 years of certified electrical expirience, you can trust us for complex jobs.
+      </Fragment>
+      
+      <Fragment slot="smltitle2">
+        Experienced, Professional Electrictians
+      </Fragment>
+      <Fragment slot="title2">
+        High-Quality Finishes
+      </Fragment>
+      <Fragment slot="desc2">
+        We take complete pride in our work, every single time. We love what we do, and we love doing it well!
+      </Fragment>
+    
+      <Fragment slot="smltitle3">
+        Compliant Water-Proof Electrical Installations
+      </Fragment>
+      <Fragment slot="title3">
+        Water-Proof Installations
+      </Fragment>
+      <Fragment slot="desc3">
+        We work with a range of businesses to install certified outdoor electrical installations.
+      </Fragment>
+  
+      <Fragment slot="smltitle4">
+        Temporary and Permenant Council Installations
+      </Fragment>
+      <Fragment slot="title4">
+        Council & Event Electrictians
+      </Fragment>
+      <Fragment slot="desc4">
+        Helping bring to life travelling art installations and the like for Brisbane and the Gold Coast.
+      </Fragment>
+    </FullScreenSliderHero>
 
-    <Pricing />
     
 
-    <FirstProcess />
-
-          <SectionHeadImg> <!-- Replace with SlotImgGSAP to load GSAP1 -->
+          <SectionHeadImg>
             <Fragment slot="smltitle">
-              Maximising your use of Shopify
+              High-Quality Work at a Fair Price
             </Fragment>
             <Fragment slot="title">
-              Seamless Shopping, Seamless Management
+              Exceptional Service, Fairly Priced.
             </Fragment>
             <Fragment slot="desc">
-              Tired of juggling complex e-commerce tools and battling with technology? Our Shopify web design solutions are designed for ease. We create a seamless shopping experience for your customers and provide you with an intuitive platform for managing your products, orders, and customers. Say goodbye to tech headaches and hello to smooth sailing in the world of e-commerce. Let's redefine your online store together.
+              Burrowin Electrical delivers exceptional residential electrical services with a focus on quality and affordability. Our team of licensed and insured electricians utilizes their expertise to ensure your home's electrical system is safe, reliable, and meets your specific needs. We believe everyone deserves access to quality electrical work, which is why we strive to offer competitive prices without compromising on expertise or customer service.
             </Fragment>
             <Fragment slot="cover">
               <img
-                src="/works/ax-sqr-estemshop.webp"
+                src="/be/bathrooms-coloured.webp"
                 class="w-full"
-                alt="custom shopify website designer on the Gold Coast. Improving sales and conversion rate for shopify business owners by offering website design, brand design and digital marketing management."
+                alt="Burrowin Electrical provides high-quality electrical solutions for homes and businesses in your area. We offer a wide range of services, including residential and commercial electrical installations, access control systems, and CCTV installations. Our team of skilled and experienced electricians is dedicated to delivering exceptional service at competitive prices. Whether you need a routine electrical repair or a complex security system installation, Burrowin Electrical is here to help. Contact us today for a free quote!"
               />
             </Fragment>
           </SectionHeadImg>
 
           <SectionHeadSecImg>
             <Fragment slot="smltitle">
-              Shopify design tailored to your brand
+              Leading Electrical Servicemen
             </Fragment>
             <Fragment slot="title">
-              On-Brand Shopify Experiences
+              Highly Skilled Electricians
             </Fragment>
             <Fragment slot="desc">
-              When it comes to e-commerce, one size doesn't fit all. Our Shopify design services are all about personalization. We dive deep into your brand's identity, your products, and your target audience to create a tailor-made online shopping experience. Our goal? To make sure your customers feel right at home on your website. We'll capture your brand's essence and showcase your products with elegance and efficiency.
+              Burrowin Electrical prioritizes skill and expertise in every team member.  Our electricians undergo rigorous training and maintain up-to-date certifications, ensuring they possess the knowledge and experience to tackle any residential electrical challenge. This commitment to ongoing learning and development guarantees our customers receive the best possible outcome, no matter the project's complexity.
             </Fragment>
             <Fragment slot="cover">
               <img
-                src="/works/e-comm-results.webp"
+                src="/be/kitchens-coloured.webp"
                 class="w-full"
-                alt="Complete brand and ecommerce store design. Creating interactive and 3d shopify store designs. Animated website designs for ecommerce."
+                alt="Burrowin Electrical provides high-quality electrical solutions for homes and businesses in your area. We offer a wide range of services, including residential and commercial electrical installations, access control systems, and CCTV installations. Our team of skilled and experienced electricians is dedicated to delivering exceptional service at competitive prices. Whether you need a routine electrical repair or a complex security system installation, Burrowin Electrical is here to help. Contact us today for a free quote!"
               />
             </Fragment>
           </SectionHeadSecImg>
 
-          <SectionHeadImg>
-            <Fragment slot="smltitle">
-              Ongoing Management Not Always Available
-            </Fragment>
-            <Fragment slot="title">
-              Keeping Sales Running Smoothly
-            </Fragment>
-            <Fragment slot="desc">
-              I'm on a mission to revolutionize the Gold Coast web design industry, and Shopify is my tool of choice for e-commerce brands. Custom e-commerce design is not just a service but a commitment to delivering an online store that resonates with the Gold Coast's unique spirit. It's time to stand out from the digital crowd, optimize your e-commerce operations, and captivate your local audience. Let's embark on a Gold Coast web design journey that leverages the power of Shopify, crafting a custom e-commerce store that represents your brand and products in the best way possible.
-            </Fragment>
-            <Fragment slot="cover">
-              <img
-                src="/works/re-placement.webp"
-                class="w-full"
-                alt="Website design that compliments your marketing campaigns. Allowing for a seamless marketing funnel and ecommerce conversion improvement. Get more traffic to your Shopify store with Google ads."
-              />
-            </Fragment>
-          </SectionHeadImg>
-  
+          <Partners />
 
 
-  <Process />
   <Cta />
+
+
+  <Faqs />
 
 </Layout>

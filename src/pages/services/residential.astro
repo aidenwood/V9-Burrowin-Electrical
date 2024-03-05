@@ -1,12 +1,23 @@
 ---
 import Cta from '../../components/home/Cta-ContactShort.astro';
-import SlotHero from '../../components/home/Slot-PageHero.astro';
-import SlotFullScreenSlider from "../../components/home/Slot-FullscreenSlider.astro";
+import SlotHero from '../../components/home/Slot-HeroFullscreen.astro';
+
+import FullScreenSlider from "../../components/home/Slot-ExtraLargeSlider.astro";
+let heroBackgroundUrl = 'url(/be/kitchens-coloured.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+
+let backgroundUrl = 'url(/be/qual-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl2 = 'url(/be/kitch-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl3 = 'url(/be/outd-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+let backgroundUrl4 = 'url(/be/council-hero.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+
 
 import Partners from "../../components/home/Section-Partners.astro";
 
 import SectionHeadImg from "../../components/home/slot-img.astro";
 import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
+
+import Faqs from "../../components/home/Faq-Residential.astro";
+
 import Process from '../../components/home/Section-Process.astro';
 import FirstProcess from '../../components/home/Process-Sml.astro';
 import BlogPost from "../../components/home/Slot-BlogPost-Single.astro";
@@ -19,43 +30,42 @@ import Pricing from '../../components/pricing/PricingTable-Wordpress.astro';
 </style>
 
 <Layout
-  description="Wordpress Websites developed and maintained on the Gold Coast, Australia."
-  title="Access Control & CCTV Video Security Installations · Burrowin Electrical"
+  description="Burrowin Electrical is your trusted partner for all your residential electrical needs. Our team of highly skilled and licensed electricians is dedicated to providing exceptional service."
+  title="Residential Electricians · Burrowin Electrical"
 >
 
-    <SlotHero>
+    <SlotHero heroBackgroundUrl={heroBackgroundUrl}>
       <Fragment slot="smltitle">
-        Gold Coast Residential Home Electrictian
+        Residential Electrictians and Electrical Installations
       </Fragment>
       <Fragment slot="title">
-        Residential Electrical
+        Modernize and Improve Home Value with Expert Electrical Installations.
       </Fragment>
       <Fragment slot="desc">
-        Trust over 6 years experience improving conversion rates in a range of industries. All while offering a fresh take on web design and digital marketing in general.
+        Burrowin Electrical is your trusted partner for all your residential electrical needs. Our team of highly skilled and licensed electricians is dedicated to providing exceptional service, ensuring the safety and functionality of your home's electrical system.
       </Fragment>
     </SlotHero>
-
-
-
-      
-    <div id="contain" class="mx-auto flex flex-col lg:flex-row">
-      <div class="w-full lg:w-1/2">
-        <a href="#">  
+    
+  
+  
+    <div id="contain" class="mx-auto flex flex-col lg:flex-row my-24">
+      <div class="w-full lg:w-1/2 my-4">
+        <a href="/contact">  
           <BlogPost>
             <Fragment slot="smltitle">
               Partner Product
             </Fragment>
             <Fragment slot="title">
-              Clevertronics Electical Access Control Device
+              Clevertronics Access Control
             </Fragment>
             <Fragment slot="desc">
-              Improving search engine ranking, pageload speed and website UX before moving onto scaling CPC ads.
+              Clevertronics are market leading specialists in emergency exit lighting and automated monitoring. We are partnered to install their products proffesionally.
             </Fragment>
           </BlogPost>
         </a>
       </div>
-      <div class="w-full lg:w-1/2">
-        <a href="https://blog.aidxn.com/posts/website-pageload-optimisation/">  
+      <div class="w-full lg:w-1/2 my-4">
+        <a href="/contact">  
           <BlogPost>
             <Fragment slot="smltitle">
               Partner Product
@@ -64,54 +74,103 @@ import Pricing from '../../components/pricing/PricingTable-Wordpress.astro';
               Cura1 FallAlert System
             </Fragment>
             <Fragment slot="desc">
-              Perfect for in homes and assisted living for alerting nurses and carers of a fall.
+              Perfect for in homes and assisted living for alerting nurses and carers of a fall. We are partnered to install their products proffesionally.
             </Fragment>
           </BlogPost>
         </a>
       </div>
     </div>
 
-    <Partners />
+
+
+    <FullScreenSlider backgroundUrl={backgroundUrl} backgroundUrl2={backgroundUrl2} backgroundUrl3={backgroundUrl3} backgroundUrl4={backgroundUrl4}>
+      <Fragment slot="smltitle">
+        Modern Kitchen Electrical Works
+      </Fragment>
+      <Fragment slot="title">
+        Modern Electrical Solutions
+      </Fragment>
+      <Fragment slot="desc">
+        With over 15 years of certified electrical expirience, you can trust us for complex jobs.
+      </Fragment>
+      
+      <Fragment slot="smltitle2">
+        Experienced, Professional Electrictians
+      </Fragment>
+      <Fragment slot="title2">
+        High-Quality Finishes
+      </Fragment>
+      <Fragment slot="desc2">
+        We take complete pride in our work, every single time. We love what we do, and we love doing it well!
+      </Fragment>
+    
+      <Fragment slot="smltitle3">
+        Compliant Water-Proof Electrical Installations
+      </Fragment>
+      <Fragment slot="title3">
+        Water-Proof Installations
+      </Fragment>
+      <Fragment slot="desc3">
+        We work with a range of businesses to install certified outdoor electrical installations.
+      </Fragment>
+  
+      <Fragment slot="smltitle4">
+        Temporary and Permenant Council Installations
+      </Fragment>
+      <Fragment slot="title4">
+        Council & Event Electrictians
+      </Fragment>
+      <Fragment slot="desc4">
+        Helping bring to life travelling art installations and the like for Brisbane and the Gold Coast.
+      </Fragment>
+    </FullScreenSliderHero>
+
+    
 
           <SectionHeadImg>
             <Fragment slot="smltitle">
-              10+ Years Experience with Wordpress
+              High-Quality Work at a Fair Price
             </Fragment>
             <Fragment slot="title">
-              Custom WordPress Powered Solutions.
+              Exceptional Service, Fairly Priced.
             </Fragment>
             <Fragment slot="desc">
-              Creating a custom WordPress website is like tailoring a suit. No two businesses are the same, and their websites shouldn't be either. That's where I come in. With years of experience in web design and WordPress expertise, I'll build a website that perfectly aligns with your brand, goals, and audience. We'll kick off with a thorough consultation, diving deep into your business's personality and your vision. Then, I'll use my design magic to create a unique and stunning website. From responsive design to user-friendly interfaces, your custom WordPress website will be a digital masterpiece that not only looks fantastic but also performs brilliantly.
+              Burrowin Electrical delivers exceptional residential electrical services with a focus on quality and affordability. Our team of licensed and insured electricians utilizes their expertise to ensure your home's electrical system is safe, reliable, and meets your specific needs. We believe everyone deserves access to quality electrical work, which is why we strive to offer competitive prices without compromising on expertise or customer service.
             </Fragment>
             <Fragment slot="cover">
               <img
-                src="/works/ax-sqr-estem.webp"
+                src="/be/bathrooms-coloured.webp"
                 class="w-full"
-                alt="Custom Wordpress website design in the health care industry. Wordpress and Shopify ecommerce website design."
+                alt="Burrowin Electrical provides high-quality electrical solutions for homes and businesses in your area. We offer a wide range of services, including residential and commercial electrical installations, access control systems, and CCTV installations. Our team of skilled and experienced electricians is dedicated to delivering exceptional service at competitive prices. Whether you need a routine electrical repair or a complex security system installation, Burrowin Electrical is here to help. Contact us today for a free quote!"
               />
             </Fragment>
           </SectionHeadImg>
 
           <SectionHeadSecImg>
             <Fragment slot="smltitle">
-              Custom WordPress Websites That Convert
+              Leading Electrical Servicemen
             </Fragment>
             <Fragment slot="title">
-              WordPress, tailored to your needs.
+              Highly Skilled Electricians
             </Fragment>
             <Fragment slot="desc">
-              In the world of web design, one size does not fit all. I understand the unique needs and goals of each client, which is why my WordPress web design services are entirely tailored to your specific requirements. From e-commerce websites that drive sales to captivating blogs that engage your audience, I've got you covered. We'll work closely together to ensure your WordPress website reflects your brand identity and delivers on its objectives. With custom features, personalized aesthetics, and robust functionality, your website will stand out from the crowd.
+              Burrowin Electrical prioritizes skill and expertise in every team member.  Our electricians undergo rigorous training and maintain up-to-date certifications, ensuring they possess the knowledge and experience to tackle any residential electrical challenge. This commitment to ongoing learning and development guarantees our customers receive the best possible outcome, no matter the project's complexity.
             </Fragment>
             <Fragment slot="cover">
               <img
-                src="/works/ax-sqr-drts.webp"
+                src="/be/kitchens-coloured.webp"
                 class="w-full"
-                alt="Custom Wordpress Gold Coast Website design for a plastic surgeon business. Lead generation website design for high value sales. Website design done directly on the Gold Coast with in person revisions."
+                alt="Burrowin Electrical provides high-quality electrical solutions for homes and businesses in your area. We offer a wide range of services, including residential and commercial electrical installations, access control systems, and CCTV installations. Our team of skilled and experienced electricians is dedicated to delivering exceptional service at competitive prices. Whether you need a routine electrical repair or a complex security system installation, Burrowin Electrical is here to help. Contact us today for a free quote!"
               />
             </Fragment>
           </SectionHeadSecImg>
 
+          <Partners />
+
 
   <Cta />
+
+
+  <Faqs />
 
 </Layout>

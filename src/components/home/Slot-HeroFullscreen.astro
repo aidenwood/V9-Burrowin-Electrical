@@ -1,67 +1,36 @@
 ---
 export interface Props {
 
-backgroundUrl: string
+heroBackgroundUrl: string
 }
 
-const {backgroundUrl} = Astro.props
+const {heroBackgroundUrl} = Astro.props
 ---    
 
-<style define:vars={{ backgroundUrl }}>
-
-.main-carousel {
-  border: 1px black;
-  height: 1200px;
-  max-width: 100vw;
-  max-height: calc(100vh - 80px);
-  background-image: var(--backgroundUrl);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .main-carousel {
-    height: 900px;
-    max-height: calc(100vh - 65px);
-  }
-}
+<style define:vars={{ heroBackgroundUrl }}>
 
 .carousel-container {
   max-width: 1920px;
-}
-
-.carousel-cell {
-  border: 1px black;
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  text-align: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 </style>
 
 
 
-<section class="">
+<section class="my-28 lg:my-48">
   <div class="limit-container">
-    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "autoPlay": 2800, "imagesLoaded": true, "prevNextButtons": false, "wrapAround": true }'>
+    <div class="main-carousel">
       
       <div class="carousel-cell px-4 sm:px-6 lg:px-8 py-8">
         <div class="carousel-container h-full w-full m-auto">
-          <div class="carousel-inner flex flex-col  bg-primary-900/60 rounded-2xl backdrop-blur-xl max-w-4xl gap-4 sm:gap-6 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 text-white">
+          <div class="carousel-inner flex flex-col text-white bg-slate-900 max-w-7xl gap-4 sm:gap-6 px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
             <h1 class="text-base uppercase font-thin tracking-widest">
               <slot name="smltitle">Small Title</slot>
             </h1>
-            <h2 class="font-medium tracking-tighter md:tracking-tight text-4xl md:text-5xl">
+            <h2 class="font-medium tracking-tighter md:tracking-tight text-4xl md:text-5xl max-w-6xl">
               <slot name="title">Title</slot>
             </h2>
-            <p class="text-lg lg:text-xl">
+            <p class="text-lg lg:text-xl max-w-4xl">
               <slot name="desc">Desc</slot>
             </p>
             <div class="pt-2 flex gap-6">
