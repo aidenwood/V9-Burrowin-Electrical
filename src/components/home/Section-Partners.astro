@@ -1,0 +1,59 @@
+
+<!-- SVG CSS and Animate for Aidxn Moving Logo -->
+<!-- Velocity8 Large Slider Settings -->
+<style>
+  svg{width:100%;height:100%;perspective:50px}circle{stroke:#26003A;stroke-width:8px;fill:none}.equator{stroke:#a600ff;transform:rotateZ(-20deg) rotateX(125deg)}.meridian{animation:2s linear infinite turn;transform:rotateZ(-20deg) rotateX(35deg) rotateY(var(--start))}@keyframes turn{100%{transform:rotateZ(-20deg) rotateX(35deg) rotateY(var(--end))}}
+  #heroArea {  display: flex; justify-content: center; align-items: center; }
+  #contain { max-width: 1920px; }
+</style>
+
+<section id="heroArea" class="my-28">
+  <div id="contain" class="mx-auto w-full px-4 sm:px-6 lg:px-8">
+    
+      <div class="flex gap-8 sm:gap-12">
+
+        
+
+        <div class="w-full">
+          <div id="header" class="text-center text-xs uppercase font-thin tracking-widest my-4 pb-8">
+            <h4>
+              Partners & Accreditors
+            </h4>
+          </div>
+          <div id="griddy" class="grid grid-cols-3 gap-x-16 gap-y-24 items-center  mx-auto">
+
+            <img 
+              class="w-auto mx-auto h-8" :src="$store.theme.isDark ? '/partners/trader.png' : '/partners/trader.png'" alt="Electrical supply parter - Hutchinson" 
+            />
+            <img 
+              class="w-auto mx-auto h-8" :src="$store.theme.isDark ? '/partners/clevertronics.png' : '/partners/clevertronics.png'" alt="Electrical supply parter - Hutchinson" 
+            />
+            <img 
+              class="w-auto mx-auto h-8" :src="$store.theme.isDark ? '/partners/hager.png' : '/partners/hager.png'" alt="Electrical supply parter - Hutchinson" 
+            />
+            <img 
+              class="w-auto mx-auto h-8" :src="$store.theme.isDark ? '/partners/electra.png' : '/partners/electra.png'" alt="Electrical supply parter - Hutchinson" 
+            />
+            <img 
+              class="w-auto mx-auto h-8" :src="$store.theme.isDark ? '/partners/legrand.png' : '/partners/legrand.png'" alt="Electrical supply parter - Hutchinson" 
+            />
+            <img 
+              class="w-auto mx-auto h-8" :src="$store.theme.isDark ? '/partners/nph.png' : '/partners/nph.png'" alt="Electrical supply parter - Hutchinson" 
+            />
+            <img 
+              class="w-auto mx-auto h-8" :src="$store.theme.isDark ? '/partners/sal.png' : '/partners/sal.png'" alt="Electrical supply parter - Hutchinson" 
+            />
+            <img 
+              class="w-auto mx-auto h-8" :src="$store.theme.isDark ? '/partners/prysmian.png' : '/partners/prysmian.png'" alt="Electrical supply parter - Hutchinson" 
+            />
+            <img 
+              class="w-auto mx-auto h-8" :src="$store.theme.isDark ? '/partners/schneider.png' : '/partners/schneider.png'" alt="Electrical supply parter - Hutchinson" 
+            />
+            
+
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
