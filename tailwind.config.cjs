@@ -26,6 +26,7 @@ module.exports = {
         '950': '#00343a',
       },
       slate: colors.slate,
+      green: colors.green,
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
