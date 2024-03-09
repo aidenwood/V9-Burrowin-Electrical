@@ -34,7 +34,7 @@ const stats = [
     name: 'CCTV',
     desc: 'Installation of CCTV and security camera systems in homes and office for monitoring video survellance.',
     value: 'Health Care Web Design & Branding',
-    link: 'services/cctv',
+    link: 'services/data',
   },
   {
     name: 'Access Control',
@@ -46,13 +46,13 @@ const stats = [
     name: 'Air Conditioning ',
     desc: 'Urgent air conditioning repairs and installations to keep the house cool, cost-effectively.',
     value: 'Music Event Web Design & Marketing',
-    link: '#faq',
+    link: '/home#faq',
   },
   {
     name: 'Servicing & Maintenance',
-    desc: 'Charge up your Telsa safetly and increase your home value with with Certified Tesla Installations.',
+    desc: 'Maintenance for electrical cabling and equipment, helping ensure the longest life and safest use.',
     value: 'Health Care Web Design & Branding',
-    link: '#faq',
+    link: '/home#faq',
   },
 ];
 ---
@@ -61,19 +61,38 @@ const stats = [
   #contain { max-width: 1920px; }
 </style>
 
-<section class="my-8">
+<section class="my-28">
   <div id="contain" class="mx-auto w-full px-4 sm:px-6 lg:px-8">
-    
+    <div class="flex flex-col">
+      <div class="flex flex-col justify-center">
+        
+        <div class="">
+          <!-- Mission description -->
+          
+                  
+              <div class="block w-fit">
+                <h3 id="chipHeader" class="my-4 px-2 py-1 font-thin uppercase tracking-widest text-xs text-white bg-primary-600 rounded-sm">Trusted for over 15 years</h3>  
+              </div>
+              <h4 class="text-3xl sm:text-4xl font-medium tracking-tight my-4">All Services</h4>
+              <p class="text-xl max-w-4xl my-4">
+                Servicing contracts for businesses across Australia, we have a experience in a wide range of electrical services. 
+                Helping you with all your technology and electrical installation needs.
+              </p>
+              
+            
+
+      </div>
+    </div>
     <div class="w-full flex flex-col justify-center">
 
-      <dl class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-8">
+      <dl class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-12">
         {
           stats.map((stat) => (
           <a href={stat.link}>  
-            <div class="border-primary-900/10 dark:border-primary-300/10 bg-slate-100 dark:bg-slate-900 duration-200 hover:bg-slate-200 rounded-sm border px-4 md:px-6 py-8 sm:py-12 h-full flex flex-col justify-start gap-4">
+            <div class="border-primary-900/10 dark:border-primary-300/10 bg-slate-100 dark:bg-slate-900 hover:bg-primary-900/10 hover:dark:bg-primary-300/10 duration-200 rounded-sm border px-4 md:px-6 py-8 sm:py-12 h-full flex flex-col justify-start gap-4">
               <dt class="hidden text-xs uppercase font-thin tracking-widest">{stat.value}</dt>
               <dd class="text-slate-950 dark:text-primary-100 text-lg xs:text-xl lg:text-2xl font-medium leading-loose tracking-tighter xs:tracking-tight">{stat.name}</dd>
-              <p class="hidden lg:block max-w-lg text-base leading-6">
+              <p class="max-w-lg text-lg leading-6">
                     {stat.desc}
                   </p>
             </div>
@@ -81,14 +100,7 @@ const stats = [
           ))
         }
       </dl>
-      <div class="mx-auto">
-                      <a
-                          href="/services"
-                          class="mt-2 mr-4 bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex items-center justify-center rounded-md border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-                        >
-                          All Services
-                      </a>
-                    </div>
+      
     </div>
     
   </div>

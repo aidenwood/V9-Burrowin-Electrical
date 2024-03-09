@@ -7,7 +7,7 @@
 <section class="my-8 md:my-16">
   <div class="mx-auto w-full lg:max-w-7xl px-4 sm:px-6 lg:px-8">
     <div
-      class="border border-primary-900/10 dark:border-primary-300/10 bg-grey-50 dark:bg-slate-900 rounded-3xl px-4 py-12 gap-8"
+      class="border border-primary-900/10 dark:border-primary-300/10 bg-slate-100 dark:bg-slate-900 rounded-md px-4 py-12 gap-8"
     >
       
       <form netlify
@@ -21,7 +21,7 @@
           <!-- key for email - aidenthomasgodbywood@gmail.com -->
           <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
           <h4 class="max-w-xl text-2xl lg:text-3xl font-medium tracking-tight py-4">
-            We're always happy to chat.
+            We're happy to answer any questions.
           </h4>
           <div class="flex flex-row gap-2 items-center justify-between py-4 pt-12 xl:pt-8">
             <legend class="text-xl font-medium mr-4">Customer details:</legend>
@@ -33,7 +33,7 @@
                 type="text"
                 placeholder="Name"
                 required
-                class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-primary-700 focus:border-primary-400 ring-gray-100"
+                class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-primary-800 focus:border-primary-600 ring-gray-100"
                 name="name"
               />
               <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -47,7 +47,7 @@
                 placeholder="Phone"
                 name="phone"
                 required
-                class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-primary-700 focus:border-primary-400 ring-gray-100"
+                class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-primary-800 focus:border-primary-600 ring-gray-100"
               />
               <div class="empty-feedback text-red-400 text-sm mt-1">
                 Please provide your phone number.
@@ -65,7 +65,7 @@
                 placeholder="Email"
                 name="email"
                 required
-                class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-primary-700 focus:border-primary-400 ring-gray-100"
+                class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-primary-800 focus:border-primary-600 ring-gray-100"
               />
               <div class="empty-feedback text-red-400 text-sm mt-1">
                 Please provide your email address.
@@ -83,69 +83,15 @@
             <fieldset class="">
               <div class="flex flex-row gap-2 items-center justify-between py-4 pt-12 xl:pt-8">
                 <legend class="text-xl font-medium mr-4">Interested in:</legend>
-                <a href="#" class="text-sm font-medium hover:underline">Call Support</a>
+                <a href="#" class="text-sm font-medium hover:underline">Call</a>
               </div>
               <div class="grid grid-cols-2 lg:grid-cols-4 w-full gap-4">
 
-                <label for="velocity" class="relative flex flex-col gap-1 justify-center border-4 bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-primary-400 focus:border-gray-600 p-4 rounded-lg shadow-md cursor-pointer">
-                  <span class="font-semibold text-base md:text-lg">Velocity</span>
+                <label for="residential" class="relative flex flex-col justify-center border-2 bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-primary-400 focus:border-gray-600 p-4 rounded-lg shadow-md cursor-pointer">
+                  <span class="font-semibold text-base md:text-lg">Residential</span>
                   
-                  <span>
-                    <span class="">from</span>
-                    <span class="">$3445 + GST</span>
-                  </span>
-                  <input type="checkbox" name="product" id="velocity" value="velocity" class="absolute h-0 w-0 appearance-none" />
-                  <span aria-hidden="true" class="hidden absolute inset-0 border-1 border-red-700 bg-red-700 bg-opacity-10 rounded-lg">
-                    <span class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-green-300">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                  </span>
-                </label>
-
-                <label for="shopify" class="relative flex flex-col bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-4 border-primary-400 focus:border-gray-600 p-4 md:p-6 rounded-lg shadow-md cursor-pointer">
-                  <span class="font-semibold text-gray-500 leading-tight mb-3 text-base md:text-lg">Shopify</span>
                   
-                  <span>
-                    <span class="">from</span>
-                    <span class="">$4445 + GST</span>
-                  </span>
-                  <input type="checkbox" name="product" id="shopify" value="shopify" class="absolute h-0 w-0 appearance-none" />
-                  <span aria-hidden="true" class="hidden absolute inset-0 border-1 border-red-700 bg-red-700 bg-opacity-10 rounded-lg">
-                    <span class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-green-300">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                  </span>
-                </label>
-
-                <label for="wordpress" class="relative flex flex-col bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-4 border-primary-400 focus:border-gray-600 p-4 md:p-6 rounded-lg shadow-md cursor-pointer">
-                  <span class="font-semibold leading-tight mb-3 text-base md:text-lg">Wordpress</span>
-                  
-                  <span>
-                    <span class="">from</span>
-                    <span class="">$5445 + GST</span>
-                  </span>
-                  <input type="checkbox" name="product" id="wordpress" value="wordpress" class="absolute h-0 w-0 appearance-none" />
-                  <span aria-hidden="true" class="hidden absolute inset-0 border-1 border-red-700 bg-red-700 bg-opacity-10 rounded-lg">
-                    <span class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-green-300">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                  </span>
-                </label>
-
-                <label for="interactiveads" class="relative flex flex-col bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-4 border-primary-400 focus:border-gray-600 p-4 md:p-6 rounded-lg shadow-md cursor-pointer">
-                  <span class="font-semibold text-gray-500 leading-tight mb-3 text-base md:text-lg">Brand Design Packs</span>
-                  
-                  <span>
-                    <span class="">Custom</span>
-                    <span class="">quote</span>
-                  </span>
-                  <input type="checkbox" name="product" id="interactiveads" value="interactiveads" class="absolute h-0 w-0 appearance-none" />
+                  <input type="checkbox" name="product" id="residential" value="residential" class="absolute h-0 w-0 appearance-none" />
                   <span aria-hidden="true" class="hidden absolute inset-0 border-1 border-cyan-700 bg-cyan-700 bg-opacity-10 rounded-lg">
                     <span class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-700">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-green-300">
@@ -155,48 +101,11 @@
                   </span>
                 </label>
 
-                <label for="gsearch" class="relative flex flex-col bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-4 border-primary-400 focus:border-gray-600 p-4 md:p-6 rounded-lg shadow-md cursor-pointer">
-                  <span class="font-semibold text-gray-500 leading-tight mb-3 text-base md:text-lg">Google Ads</span>
+                <label for="commercial" class="relative flex flex-col justify-center bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-2 border-primary-400 focus:border-gray-600 p-4 md:p-6 rounded-lg shadow-md cursor-pointer">
+                  <span class="font-semibold text-gray-500 leading-tight text-base md:text-lg">Commercial</span>
                   
-                  <span>
-                    <span class="">from</span>
-                    <span class="">$1445 / mth</span>
-                  </span>
-                  <input type="checkbox" name="product" id="gsearch" value="gsearch" class="absolute h-0 w-0 appearance-none" />
-                  <span aria-hidden="true" class="hidden absolute inset-0 border-1 border-cyan-700 bg-cyan-700 bg-opacity-10 rounded-lg">
-                    <span class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-green-300">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                  </span>
-                </label>
-
-                <label for="fbads" class="relative flex flex-col bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-4 border-primary-400 focus:border-gray-600 p-4 md:p-6 rounded-lg shadow-md cursor-pointer">
-                  <span class="font-semibold text-gray-500 leading-tight mb-3 text-base md:text-lg">Meta Ads</span>
-                  
-                  <span>
-                    <span class="">from</span>
-                    <span class="">$3445 / mth</span>
-                  </span>
-                  <input type="checkbox" name="product" id="fbads" value="fbads" class="absolute h-0 w-0 appearance-none" />
-                  <span aria-hidden="true" class="hidden absolute inset-0 border-1 border-cyan-700 bg-cyan-700 bg-opacity-10 rounded-lg">
-                    <span class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-green-300">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                  </span>
-                </label>
                 
-                <label for="interactiveads" class="relative flex flex-col bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-4 border-primary-400 focus:border-gray-600 p-4 md:p-6 rounded-lg shadow-md cursor-pointer">
-                  <span class="font-semibold text-gray-500 leading-tight mb-3 text-base md:text-lg">Interactive Ads</span>
-                  
-                  <span>
-                    <span class="">from</span>
-                    <span class="">$2445 / mth</span>
-                  </span>
-                  <input type="checkbox" name="product" id="interactiveads" value="interactiveads" class="absolute h-0 w-0 appearance-none" />
+                  <input type="checkbox" name="product" id="commercial" value="commercial" class="absolute h-0 w-0 appearance-none" />
                   <span aria-hidden="true" class="hidden absolute inset-0 border-1 border-cyan-700 bg-cyan-700 bg-opacity-10 rounded-lg">
                     <span class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-700">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-green-300">
@@ -206,24 +115,34 @@
                   </span>
                 </label>
 
-                <label for="interactiveads" class="relative flex flex-col bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-4 border-primary-400 focus:border-gray-600 p-4 md:p-6 rounded-lg shadow-md cursor-pointer">
-                  <span class="font-semibold text-gray-500 leading-tight mb-3 text-base md:text-lg">Video Production</span>
+                <label for="data-cctv" class="relative flex flex-col justify-center bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-2 border-primary-400 focus:border-gray-600 p-4 md:p-6 rounded-lg shadow-md cursor-pointer">
+                  <span class="font-semibold leading-tight text-base md:text-lg">Data & CCTV</span>
                   
-                  <span>
-                    <span class="">Custom</span>
-                    <span class="">quote</span>
-                  </span>
-                  <input type="checkbox" name="product" id="interactiveads" value="interactiveads" class="absolute h-0 w-0 appearance-none" />
-                  <span aria-hidden="true" class="hidden absolute inset-0 border-1 border-cyan-700 bg-cyan-700 bg-opacity-10 rounded-lg">
-                    <span class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-green-300">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                  </span>
-                </label>
-
                 
+                  <input type="checkbox" name="product" id="data-cctv" value="data-cctv" class="absolute h-0 w-0 appearance-none" />
+                  <span aria-hidden="true" class="hidden absolute inset-0 border-1 border-cyan-700 bg-cyan-700 bg-opacity-10 rounded-lg">
+                    <span class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-700">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-green-300">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+
+                <label for="access-control" class="relative flex flex-col justify-center bg-white dark:bg-primary-700/10 hover:bg-primary-700/20 duration-100 border-2 border-primary-400 focus:border-gray-600 p-4 md:p-6 rounded-lg shadow-md cursor-pointer">
+                  <span class="font-semibold text-gray-500 leading-tight text-base md:text-lg">Access Control</span>
+                  
+        
+                  <input type="checkbox" name="product" id="access-control" value="access-control" class="absolute h-0 w-0 appearance-none" />
+                  <span aria-hidden="true" class="hidden absolute inset-0 border-1 border-cyan-700 bg-cyan-700 bg-opacity-10 rounded-lg">
+                    <span class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center rounded-full bg-green-700">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-green-300">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+
 
               </div>
             </fieldset>
@@ -233,7 +152,6 @@
 
           <div class="flex flex-row gap-2 items-center justify-between py-4 pt-12 xl:pt-8">
             <legend class="text-xl font-medium mr-4">Anything else:</legend>
-            <a href="#" class="text-sm font-medium hover:underline">Call Support</a>
           </div>
           <div class="flex flex-col md:flex-row gap-4">
             
@@ -243,7 +161,7 @@
                 placeholder="Anything we can help with in particular?"
                 name="message"
                 
-                class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-primary-700 focus:border-primary-400 ring-gray-100"
+                class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-primary-800 focus:border-primary-600 ring-gray-100"
               /> 
             </div>
             <input type="hidden" class="sourceLogging" id="hiddenKey02" name="Contacted on Page" data-name="formUrl1" value="">
@@ -253,7 +171,7 @@
 
 
           <button
-            class="text-lg text-white dark:text-white bg-primary-700 hover:bg-primary-400 items-center inline-flex font-medium justify-center rounded-full transition px-6 py-4 my-8 mr-2"
+            class="text-lg text-white dark:text-white bg-primary-600 hover:bg-primary-800 items-center inline-flex font-medium justify-center rounded-md transition px-6 py-4 my-8 mr-2"
             type="submit"
           >
             Submit
