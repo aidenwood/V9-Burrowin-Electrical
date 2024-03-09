@@ -4,25 +4,19 @@ const stats = [
     name: 'Commercial Projects',
     desc: 'Spark success in your workspace with our top-notch electricians for Commercial Projects.',
     value: 'Real Estate Web Design & Marketing',
-    link: '#faq',
+    link: '/commercial',
   },
   {
     name: 'Residential Builds',
     desc: 'Building new homes with care. Trusted by hundreds of happy clients for our quality of work.',
     value: 'E-Commerce / Shopify Optimisation',
-    link: '#faq',
+    link: '/residential',
   },
   {
     name: 'Home Renovations',
     desc: 'Improve your home with renovations such as modern lighting and security systems.',
     value: 'Music Event Web Design & Marketing',
-    link: '#faq',
-  },
-  {
-    name: 'Electrical Servicing',
-    desc: 'Charge up your Telsa safetly and increase your home value with with Certified Tesla Installations.',
-    value: 'Health Care Web Design & Branding',
-    link: '#faq',
+    link: '/residential',
   },
   {
     name: 'Phone',
@@ -54,6 +48,12 @@ const stats = [
     value: 'Music Event Web Design & Marketing',
     link: '#faq',
   },
+  {
+    name: 'Servicing & Maintenance',
+    desc: 'Charge up your Telsa safetly and increase your home value with with Certified Tesla Installations.',
+    value: 'Health Care Web Design & Branding',
+    link: '#faq',
+  },
 ];
 ---
 
@@ -66,13 +66,14 @@ const stats = [
     <div class="flex flex-col">
       <div class="flex flex-col justify-center">
         
-        <div class="flex flex-col gap-4 sm:gap-6">
+        <div class="">
           <!-- Mission description -->
           
-              <h4 class="text-xs uppercase font-thin tracking-widest">
-                Experienced Electricians
-              </h4>
-              <h3 class="text-3xl sm:text-4xl font-medium tracking-tight">Wide Range of Electrical Services</h3>
+                  
+              <div class="block w-fit">
+                <h3 id="chipHeader" class="my-4 px-2 py-1 font-thin uppercase tracking-widest text-xs text-white bg-primary-600 rounded-sm">Wide Range of Electrical Services</h3>  
+              </div>
+              <h4 class="text-3xl sm:text-4xl font-medium tracking-tight my-4">Experienced Electricians</h4>
               <p class="text-lg xs:text-xl max-w-4xl my-4">
                 Servicing contracts for businesses across Australia, we have a experience in a wide range of electrical services. 
                 Helping you with all your technology and electrical installation needs.

@@ -2,7 +2,7 @@
     <!-- Toggle theme mode -->
   <button
   type="button"
-  class="text-black border-slate-100 bg-slate-100 hover:bg-slate-300 dark:hover:border-white inline-flex h-14 w-14 items-center justify-center rounded-md transition focus:outline-none focus-visible:ring-2"
+  class="bg-primary-600 hover:bg-primary-800 dark:hover:border-white text-black dark:text-white inline-flex h-14 w-14 items-center justify-center rounded-md transition focus:outline-none focus-visible:ring-2"
   x-data
   @click="$store.theme.toggle()"
 >
@@ -12,7 +12,7 @@
     class="h-6 md:w-6"
     :class="{ 'hidden': !($store.theme.isDark) }"
     xmlns="http://www.w3.org/2000/svg"
-    fill="currentColor"
+    fill=""
     viewBox="0 0 24 24"
     aria-hidden="true"
   >

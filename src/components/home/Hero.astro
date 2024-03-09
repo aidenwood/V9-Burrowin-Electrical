@@ -7,15 +7,16 @@
   #contain { max-width: 1920px; }
 </style>
 
-<section id="heroArea" class="my-28 lg:my-48">
+<section id="heroArea" class="my-28 lg:my-32">
   <div id="contain" class="mx-auto w-full px-4 sm:px-6 lg:px-8 my-16">
     
       <div class="flex flex-col lg:flex-row items-start lg:items-center gap-8 sm:gap-12">
 
         <div class="w-full lg:w-3/5 gap-6"> <!-- holding lg:w-2/3 xl:w-1/2 until image added above 3 lines  -->
-          <h1 class="text-xs uppercase font-thin tracking-widest pb-4">
-            Quality Electrictians and Electical Installations
-          </h1>
+          <div class="block w-fit">
+            <h1 id="chipHeader" class="my-4 px-2 py-1 font-thin uppercase tracking-widest text-xs text-white bg-primary-600 rounded-sm">High-Quality Electical Installaters</h1>  
+          </div>
+          
           <h2 class="font-medium tracking-tighter md:tracking-tight max-w-4xl text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
             Experienced Electricians, trusted for over 15 years.
           </h2>
@@ -34,38 +35,39 @@
 
         <div class=" w-full lg:w-2/5 items-start my-16">
           <div id="header" class="text-center text-xs uppercase font-thin tracking-widest my-4 pb-8">
-            <h4>
-              Partners & Accreditors
-            </h4>
+            <div class="block w-fit mx-auto">
+              <h3 id="chipHeader" class="my-4 px-2 py-1 font-thin uppercase tracking-widest text-xs text-white bg-primary-600 rounded-sm">Partners & Accreditors</h3>  
+            </div>
+            
           </div>
           <div id="griddy" class="grid grid-cols-3 gap-x-16 gap-y-24 items-center max-w-xl mx-auto">
 
             <img 
-              class="w-full" :src="$store.theme.isDark ? '/partners/trader.png' : '/partners/trader.png'" alt="Electrical supply parter - Hutchinson" 
+              class="w-full" :src="$store.theme.isDark ? '/partners/trader.png' : '/partners/trader.png'" alt="Electrical supply parter - Trader" 
             />
             <img 
-              class="w-full" :src="$store.theme.isDark ? '/partners/clevertronics.png' : '/partners/clevertronics.png'" alt="Electrical supply parter - Hutchinson" 
+              class="w-full" :src="$store.theme.isDark ? '/partners/clevertronics.png' : '/partners/clevertronics.png'" alt="Electrical supply parter - Clevertronics" 
             />
             <img 
-              class="w-full" :src="$store.theme.isDark ? '/partners/hager.png' : '/partners/hager.png'" alt="Electrical supply parter - Hutchinson" 
+              class="w-full" :src="$store.theme.isDark ? '/partners/hager.png' : '/partners/hager.png'" alt="Electrical supply parter - Hager" 
             />
             <img 
-              class="w-full" :src="$store.theme.isDark ? '/partners/electra.png' : '/partners/electra.png'" alt="Electrical supply parter - Hutchinson" 
+              class="w-full" :src="$store.theme.isDark ? '/partners/electra.png' : '/partners/electra.png'" alt="Electrical supply parter - Electra" 
             />
             <img 
-              class="w-full" :src="$store.theme.isDark ? '/partners/legrand.png' : '/partners/legrand.png'" alt="Electrical supply parter - Hutchinson" 
+              class="w-full" :src="$store.theme.isDark ? '/partners/legrand.png' : '/partners/legrand.png'" alt="Electrical supply parter - Legrand" 
             />
             <img 
-              class="w-full" :src="$store.theme.isDark ? '/partners/nph.png' : '/partners/nph.png'" alt="Electrical supply parter - Hutchinson" 
+              class="w-full" :src="$store.theme.isDark ? '/partners/nph.png' : '/partners/nph.png'" alt="Electrical supply parter - NPH" 
             />
             <img 
-              class="w-full" :src="$store.theme.isDark ? '/partners/sal.png' : '/partners/sal.png'" alt="Electrical supply parter - Hutchinson" 
+              class="w-full" :src="$store.theme.isDark ? '/partners/sal.png' : '/partners/sal.png'" alt="Electrical supply parter - Sal" 
             />
             <img 
-              class="w-full" :src="$store.theme.isDark ? '/partners/prysmian.png' : '/partners/prysmian.png'" alt="Electrical supply parter - Hutchinson" 
+              class="w-full" :src="$store.theme.isDark ? '/partners/prysmian.png' : '/partners/prysmian.png'" alt="Electrical supply parter - Prysmian" 
             />
             <img 
-              class="w-full" :src="$store.theme.isDark ? '/partners/schneider.png' : '/partners/schneider.png'" alt="Electrical supply parter - Hutchinson" 
+              class="w-full" :src="$store.theme.isDark ? '/partners/schneider.png' : '/partners/schneider.png'" alt="Electrical supply parter - Schneider" 
             />
             
 

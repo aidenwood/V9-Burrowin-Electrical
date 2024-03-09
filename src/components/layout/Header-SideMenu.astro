@@ -61,63 +61,82 @@ const links = [
 			</button>
 		</div>
 		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto space-x-8 xl:space-x-16">
-			<li><a class="text-md xl:text-lg text-gray-400 font-medium hover:text-gray-500" href="/services/residential">Residential</a></li>
+			<li><a class="text-sm font-medium text-gray-400 hover:text-gray-500" href="/services/residential">Residential</a></li>
 			
-			<li><a class="text-md xl:text-lg text-blue-600 font-medium" href="/services/commercial">Commercial</a></li>
+			<li><a class="text-sm font-medium text-gray-400 hover:text-gray-500" href="/services/commercial">Commercial</a></li>
 			
-			<li><a class="text-md xl:text-lg text-gray-400 hover:text-gray-500 font-medium" href="/services/data">Data / CCTV</a></li>
+			<li><a class="text-sm font-medium text-gray-400 hover:text-gray-500" href="/services/data">Data / CCTV</a></li>
 			
-			<li><a class="text-md xl:text-lg text-gray-400 hover:text-gray-500 font-medium" href="/services/access">Access Control</a></li>
+			<li><a class="text-sm font-medium text-gray-400 hover:text-gray-500" href="/services/access">Access Control</a></li>
 		</ul>
     <!-- Perfect Brand Buttons both secondary and primary -->
     <div class="inline-flex items-center gap-4">
+      
+      <a class="hidden lg:inline-block duration-200  text-black bg-slate-200 hover:bg-slate-400 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400  border border-transparent rounded-md px-5 py-3 text-base font-medium" href="/contact">Contact</a>
+      <a class="hidden lg:inline-block duration-200 text-black bg-primary-600 hover:bg-primary-800 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 rounded-md border border-transparent px-5 py-3 text-base font-medium" href="/enquire">Enquire</a>      
       <DarkMode />
-      <a class="hidden lg:inline-block duration-200  text-black bg-slate-100 hover:bg-slate-300 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400  border border-transparent rounded-md px-5 py-3 text-base font-medium" href="/contact">Contact</a>
-      <a class="hidden lg:inline-block duration-200 bg-primary-600 hover:bg-primary-800 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 rounded-md border border-transparent px-5 py-3 text-base font-medium text-white" href="/enquire">Enquire</a>      
+      
     </div>
 
 	</nav>
 	<div class="navbar-menu relative z-50 hidden">
 		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-		<nav class="fixed top-0 left-0 bottom-0 flex flex-col justify-start w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col justify-start w-3/4 max-w-sm py-6 px-6 bg-slate-100 dark:bg-slate-200 border-r overflow-y-auto">
 			<div class="flex items-center mb-8">
 				<a class="mr-auto text-3xl font-bold leading-none" href="/">
 					<img
-            class="h-28 w-auto"
+            class="h-10 w-auto"
             :src="$store.theme.isDark ? '/br-logo-sqr.svg' : '/br-logo-sqr.svg'"
             alt="Burrowin Electrical - Gold Coast Electrician"
           />
 				</a>
 				<button class="navbar-close">
-					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<svg class="h-6 w-6 text-gray-400 dark:text-black cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
 					</svg>
 				</button>
 			</div>
-			<div>
-				<ul>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/services/residential">Residential</a>
+			<div class="mb-8">
+        <div class="block w-fit">
+          <h2 id="chipHeader" class="mb-2 px-2 py-1 font-thin uppercase tracking-widest text-xs text-white bg-primary-600 rounded-sm">Services:</h2>  
+        </div>
+        <ul>
+					<li class="mb-2">
+						<a class="block text-lg font-medium text-gray-400 dark:text-black hover:bg-blue-50 hover:text-blue-600" href="/services/residential">Residential</a>
 					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/services/commercial">Commercial</a>
+					<li class="mb-2">
+						<a class="block text-lg font-medium text-gray-400 dark:text-black hover:bg-blue-50 hover:text-blue-600" href="/services/commercial">Commercial</a>
 					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/services/data">Data / CCTV</a>
+					<li class="mb-2">
+						<a class="block text-lg font-medium text-gray-400 dark:text-black hover:bg-blue-50 hover:text-blue-600" href="/services/data">Data / CCTV</a>
 					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/services/access">Access Control</a>
+					<li class="mb-2">
+						<a class="block text-lg font-medium text-gray-400 dark:text-black hover:bg-blue-50 hover:text-blue-600" href="/services/access">Access Control</a>
+					</li>
+				</ul>
+			</div>
+      <div class="mb-8">
+        <div class="block w-fit">
+          <h2 id="chipHeader" class="mb-2 px-2 py-1 font-thin uppercase tracking-widest text-xs text-white bg-primary-600 rounded-sm">Locations:</h2>  
+        </div>
+        <ul>
+					<li class="mb-2">
+						<a class="block text-lg font-medium text-gray-400 dark:text-black hover:bg-blue-50 hover:text-blue-600" href="/service-areas/brisbane">Brisbane</a>
+					</li>
+					<li class="mb-2">
+						<a class="block text-lg font-medium text-gray-400 dark:text-black hover:bg-blue-50 hover:text-blue-600" href="/service-areas/gold-coast">Gold Coast</a>
+					</li>
+					<li class="mb-2">
+						<a class="block text-lg font-medium text-gray-400 dark:text-black hover:bg-blue-50 hover:text-blue-600" href="/service-areas/sunshine-coast">Sunshine Coast</a>
+					</li>
+					<li class="mb-2">
+						<a class="block text-lg font-medium text-gray-400 dark:text-black hover:bg-blue-50 hover:text-blue-600" href="/service-areas/australia">Australia-Wide</a>
 					</li>
 				</ul>
 			</div>
 			<div class="mt-auto">
-				
-					<a class="w-full mt-6 mr-2 text-black bg-slate-100 hover:bg-slate-300 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 inline-flex items-center justify-center rounded-md border border-transparent px-5 py-3 text-base font-medium" href="#">Contact</a>
-					<a class="w-full mt-6 mr-2 bg-primary-600 hover:bg-primary-800 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 inline-flex items-center justify-center rounded-md border border-transparent px-5 py-3 text-base font-medium text-white" href="#">Enquire</a>
-				
-				<p class="my-4 text-xs text-center text-gray-400">
-					<span>Copyright © 2024</span>
-				</p>
+					<a class="w-full mt-6 mr-2 duration-200 text-black bg-slate-100 hover:bg-slate-300 dark:hover:bg-primary-400 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 inline-flex items-center justify-center rounded-md border border-transparent px-5 py-3 text-base font-medium" href="#">Contact</a>
+					<a class="w-full mt-6 mr-2 duration-200 bg-primary-600 hover:bg-primary-800 dark:hover:bg-primary-400 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 inline-flex items-center justify-center rounded-md border border-transparent px-5 py-3 text-base font-medium text-white" href="#">Enquire</a>
 			</div>
 		</nav>
 	</div>

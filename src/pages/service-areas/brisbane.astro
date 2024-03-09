@@ -1,0 +1,80 @@
+---
+import Cta from '../../components/home/Cta-ContactShort.astro';
+import SlotHero from '../../components/home/Slot-HeroFullscreen.astro';
+
+let heroBackgroundUrl = 'url(/be/kitchens-coloured.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
+
+
+import SectionHeadImg from "../../components/home/slot-img.astro";
+import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
+
+import Layout from '../../layouts/Layout.astro';
+
+---
+<style>
+  #contain { max-width: 1920px; }
+</style>
+
+<Layout
+  description="Burrowin Electrical is your trusted partner for all your residential electrical needs. Our team of highly skilled and licensed electricians is dedicated to providing exceptional service."
+  title="Brisbane Electricians · Burrowin Electrical"
+>
+
+    <SlotHero heroBackgroundUrl={heroBackgroundUrl}>
+      <Fragment slot="smltitle">
+        Brisbane Electrictians and Electrical Installations
+      </Fragment>
+      <Fragment slot="title">
+        Leading Brisbane Electricians for Over 15 Years
+      </Fragment>
+      <Fragment slot="desc">
+        Burrowin Electrical is your trusted partner for all your residential electrical needs. Our team of highly skilled and licensed electricians is dedicated to providing exceptional service, ensuring the safety and functionality of your home's electrical system.
+      </Fragment>
+    </SlotHero>
+    
+
+          <SectionHeadImg>
+            <Fragment slot="smltitle">
+              High-Quality Work at a Fair Price
+            </Fragment>
+            <Fragment slot="title">
+              Exceptional Service, Fairly Priced.
+            </Fragment>
+            <Fragment slot="desc">
+              Burrowin Electrical delivers exceptional residential electrical services with a focus on quality and affordability. Our team of licensed and insured electricians utilizes their expertise to ensure your home's electrical system is safe, reliable, and meets your specific needs. We believe everyone deserves access to quality electrical work, which is why we strive to offer competitive prices without compromising on expertise or customer service.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                src="/be/bathrooms-coloured.webp"
+                class="w-full"
+                alt="Burrowin Electrical provides high-quality electrical solutions for homes and businesses in your area. We offer a wide range of services, including residential and commercial electrical installations, access control systems, and CCTV installations. Our team of skilled and experienced electricians is dedicated to delivering exceptional service at competitive prices. Whether you need a routine electrical repair or a complex security system installation, Burrowin Electrical is here to help. Contact us today for a free quote!"
+              />
+            </Fragment>
+          </SectionHeadImg>
+
+          <SectionHeadSecImg>
+            <Fragment slot="smltitle">
+              Leading Electrical Servicemen
+            </Fragment>
+            <Fragment slot="title">
+              Highly Skilled Electricians
+            </Fragment>
+            <Fragment slot="desc">
+              Burrowin Electrical prioritizes skill and expertise in every team member.  Our electricians undergo rigorous training and maintain up-to-date certifications, ensuring they possess the knowledge and experience to tackle any residential electrical challenge. This commitment to ongoing learning and development guarantees our customers receive the best possible outcome, no matter the project's complexity.
+            </Fragment>
+            <Fragment slot="cover">
+              <img
+                src="/be/kitchens-coloured.webp"
+                class="w-full"
+                alt="Burrowin Electrical provides high-quality electrical solutions for homes and businesses in your area. We offer a wide range of services, including residential and commercial electrical installations, access control systems, and CCTV installations. Our team of skilled and experienced electricians is dedicated to delivering exceptional service at competitive prices. Whether you need a routine electrical repair or a complex security system installation, Burrowin Electrical is here to help. Contact us today for a free quote!"
+              />
+            </Fragment>
+          </SectionHeadSecImg>
+
+
+
+  <Cta />
+
+
+
+</Layout>
