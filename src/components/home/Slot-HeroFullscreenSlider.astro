@@ -80,9 +80,11 @@ const {backgroundUrl, backgroundUrl2, backgroundUrl3} = Astro.props
         <div class="carousel-container h-full w-full">
           <div class="container-offset h-full flex items-center px-4 sm:px-6 lg:px-8">
             <div class="carousel-inner flex flex-col justify-center text-white bg-primary-800/20 dark:bg-black/30 rounded-2xl backdrop-blur-xl max-w-7xl gap-2 sm:gap-4 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 my-auto">
-              <h1 class="text-xs md:text-base uppercase font-thin tracking-widest">
-                <slot name="smltitle">Small Title</slot>
-              </h1>
+              <div class="block w-fit">
+                <h1 class="px-2 py-1 font-thin uppercase tracking-widest text-xs text-white bg-primary-600 rounded-sm">
+                  <slot name="smltitle">Small Title</slot>
+                </h1>
+              </div>
               <h2 class="font-medium tracking-tighter md:tracking-tight max-w-6xl text-3xl sm:text-4xl md:text-5xl xl:text-6xl lg:pr-4">
                 <slot name="title">Title</slot>
               </h2>

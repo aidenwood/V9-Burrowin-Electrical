@@ -17,16 +17,18 @@ const {heroBackgroundUrl} = Astro.props
 
 
 
-<section class="my-28 lg:my-48">
+<section class="my-16">
   <div class="limit-container">
     <div class="main-carousel">
       
       <div class="carousel-cell px-4 sm:px-6 lg:px-8 py-8">
         <div class="carousel-container h-full w-full m-auto">
-          <div class="carousel-inner flex flex-col text-white bg-slate-900 gap-4 sm:gap-6 px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-            <h1 class="text-base uppercase font-thin tracking-widest">
-              <slot name="smltitle">Small Title</slot>
-            </h1>
+          <div class="carousel-inner flex flex-col text-white bg-slate-900 gap-4 px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="block w-fit">
+              <h1 class="px-2 py-1 font-thin uppercase tracking-widest text-xs text-white bg-primary-600 rounded-sm">
+                <slot name="smltitle">Small Title</slot>
+              </h1>
+            </div>
             <h2 class="font-medium tracking-tighter md:tracking-tight text-4xl md:text-5xl max-w-7xl">
               <slot name="title">Title</slot>
             </h2>
