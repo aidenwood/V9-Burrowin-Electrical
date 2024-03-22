@@ -10,6 +10,6 @@ export default defineConfig({
   experimental: {
     viewTransitions: true
   },
-  site: 'https://aidxn.com',
+  site: 'https://burrowinelectrical.com.au',
   integrations: [tailwind(), compress(), partytown(), sitemap()]
 });

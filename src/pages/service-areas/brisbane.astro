@@ -5,8 +5,7 @@ import SlotHero from '../../components/home/Slot-HeroFullscreen.astro';
 let heroBackgroundUrl = 'url(/be/kitchens-coloured.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
 
 
-import SectionHeadImg from "../../components/home/slot-img.astro";
-import SectionHeadSecImg from "../../components/home/slot-img-rev.astro";
+import SectionContent from "../../components/home/Slot-Indent-Info.astro";
 
 import Layout from '../../layouts/Layout.astro';
 
@@ -33,43 +32,128 @@ import Layout from '../../layouts/Layout.astro';
     </SlotHero>
     
 
-          <SectionHeadImg>
+          <SectionContent>
             <Fragment slot="smltitle">
-              High-Quality Work at a Fair Price
+              Leading Brisbane Electricians
             </Fragment>
             <Fragment slot="title">
-              Exceptional Service, Fairly Priced.
+              Inner Brisbane
             </Fragment>
             <Fragment slot="desc">
-              Burrowin Electrical delivers exceptional residential electrical services with a focus on quality and affordability. Our team of licensed and insured electricians utilizes their expertise to ensure your home's electrical system is safe, reliable, and meets your specific needs. We believe everyone deserves access to quality electrical work, which is why we strive to offer competitive prices without compromising on expertise or customer service.
+              
+              <ul class="grid grid-cols-2 gap-y-4 gap-x-8">
+                <li>Fortitude Valley</li>
+                <li>New Farm</li>
+                <li>Teneriffe</li>
+                <li>Newstead</li>
+                <li>Brisbane CBD</li>
+                <li>Spring Hill</li>
+                <li>Paddington</li>
+                <li>Woolloongabba</li>
+                <li>Highgate Hill</li>
+                <li>Milton</li>
+              </ul>
             </Fragment>
-            <Fragment slot="cover">
-              <img
-                src="/be/bathrooms-coloured.webp"
-                class="w-full"
-                alt="Burrowin Electrical provides high-quality electrical solutions for homes and businesses in your area. We offer a wide range of services, including residential and commercial electrical installations, access control systems, and CCTV installations. Our team of skilled and experienced electricians is dedicated to delivering exceptional service at competitive prices. Whether you need a routine electrical repair or a complex security system installation, Burrowin Electrical is here to help. Contact us today for a free quote!"
-              />
-            </Fragment>
-          </SectionHeadImg>
+            
+          </SectionContent>
 
-          <SectionHeadSecImg>
+
+          <SectionContent>
             <Fragment slot="smltitle">
-              Leading Electrical Servicemen
+              Leading Brisbane Electricians
             </Fragment>
             <Fragment slot="title">
-              Highly Skilled Electricians
+              East Brisbane
             </Fragment>
             <Fragment slot="desc">
-              Burrowin Electrical prioritizes skill and expertise in every team member.  Our electricians undergo rigorous training and maintain up-to-date certifications, ensuring they possess the knowledge and experience to tackle any residential electrical challenge. This commitment to ongoing learning and development guarantees our customers receive the best possible outcome, no matter the project's complexity.
+              <ul class="grid grid-cols-2 gap-y-4 gap-x-8">
+                <li>Carina</li>
+                <li>Cannon Hill</li>
+                <li>Morningside</li>
+                <li>Bulimba</li>
+                <li>Camp Hill</li>
+                <li>Coorparoo</li>
+                <li>Kalinga</li>
+                <li>Norman Park</li>
+                <li>Drayton</li>
+              </ul>
             </Fragment>
-            <Fragment slot="cover">
-              <img
-                src="/be/kitchens-coloured.webp"
-                class="w-full"
-                alt="Burrowin Electrical provides high-quality electrical solutions for homes and businesses in your area. We offer a wide range of services, including residential and commercial electrical installations, access control systems, and CCTV installations. Our team of skilled and experienced electricians is dedicated to delivering exceptional service at competitive prices. Whether you need a routine electrical repair or a complex security system installation, Burrowin Electrical is here to help. Contact us today for a free quote!"
-              />
+            
+          </SectionContent>
+
+
+          <SectionContent>
+            <Fragment slot="smltitle">
+              Leading Brisbane Electricians
             </Fragment>
-          </SectionHeadSecImg>
+            <Fragment slot="title">
+              North Brisbane
+            </Fragment>
+            <Fragment slot="desc">
+            
+                <ul class="grid grid-cols-2 gap-y-4 gap-x-8">
+                  <li>Kelvin Grove</li>
+                  <li>Herston</li>
+                  <li>Windsor</li>  
+                  <li>Clayfield</li>
+                  <li>Nundah</li>
+                  <li>Eagle Farm</li>
+                  <li>Gateway</li>
+                  <li>Brisbane Airport</li>
+                </ul>
+            </Fragment>
+            
+          </SectionContent>
+
+
+
+          <SectionContent>
+            <Fragment slot="smltitle">
+              Leading Brisbane Electricians
+            </Fragment>
+            <Fragment slot="title">
+              South Brisbane
+            </Fragment>
+            <Fragment slot="desc">
+            
+              <ul class="grid grid-cols-2 gap-y-4 gap-x-8">
+                <li>South Bank </li>
+                <li>West End</li>
+                <li>South Brisbane</li>
+                <li>St Lucia</li>
+                <li>Woolloongabba</li>
+                <li>Annerley</li>
+                <li>Greenslopes</li>
+                <li>Coorparoo</li>
+                <li>Dutton Park</li>
+              </ul>
+            </Fragment>
+            
+          </SectionContent>
+
+
+
+          <SectionContent>
+            <Fragment slot="smltitle">
+              Leading Brisbane Electricians
+            </Fragment>
+            <Fragment slot="title">
+              Western Suburbs
+            </Fragment>
+            <Fragment slot="desc">
+              <ul class="grid grid-cols-2 gap-y-4 gap-x-8">
+                <li>The Gap</li>
+                <li>Ashgrove</li>
+                <li>St Peters</li>
+                <li>Indooroopilly</li>
+                <li>Taringa</li>
+                <li>Toowong</li>
+                <li>Kenmore</li>
+                <li>The Lakes</li>
+              </ul>
+            </Fragment>
+            
+          </SectionContent>
 
 
 

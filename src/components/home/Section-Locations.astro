@@ -1,0 +1,57 @@
+---
+const stats = [
+{
+    "name": "Brisbane",
+    "desc": "We proudly service the entire Brisbane area, including a large range of suburbs.",
+    "value": "Brisbane",
+    "link": "/service-areas/brisbane"
+  },
+  {
+    "name": "Gold Coast",
+    "desc": "Burrowin Electrical extends its expertise to the Gold Coast. Find an electrician near you.",
+    "value": "Gold Coast",
+    "link": "/service-areas/gold-coast"
+  },
+  {
+    name: "Sunshine Coast",
+    desc: "Servicing homes and businesses from Noosa to Caloundra, your trusted Sunshine Coast electrician.",
+    value: "Sunshine Coast",
+    link: "/service-areas/sunshine-coast"
+  },
+  {
+    name: "Australia Wide",
+    desc: "Burrowin Electrical complete larger contracts for a range of electrical services across Australia.",
+    value: "Australia Wide",
+    link: "/service-areas/australia"
+  }
+];
+---
+
+<style>
+  #contain { max-width: 1920px; }
+</style>
+
+<section class="my-8">
+  <div id="contain" class="mx-auto w-full px-4 sm:px-6 lg:px-8">
+    
+    <div class="w-full flex flex-col justify-center">
+
+      <dl class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 my-8">
+        {
+          stats.map((stat) => (
+          <a href={stat.link}>  
+            <div class="border-primary-900/10 dark:border-primary-300/10 bg-slate-100 dark:bg-slate-900 duration-200 hover:bg-slate-200 rounded-sm border px-4 md:px-6 py-8 sm:py-12 h-full flex flex-col justify-start gap-4">
+              <dt class="hidden text-xs uppercase font-thin tracking-widest">{stat.value}</dt>
+              <dd class="text-slate-950 dark:text-primary-100 text-lg xs:text-xl lg:text-2xl font-medium leading-loose tracking-tighter xs:tracking-tight">{stat.name}</dd>
+              <p class="hidden lg:block max-w-lg text-base leading-6">
+                    {stat.desc}
+                  </p>
+            </div>
+          </a>
+          ))
+        }
+      </dl>
+      
+    
+  </div>
+</section>
