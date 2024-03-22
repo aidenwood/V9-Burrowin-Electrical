@@ -10,6 +10,8 @@ let backgroundUrl2 = 'url(/be/commercial-2.webp)' // Define image for Slot-HeroF
 let backgroundUrl3 = 'url(/be/commercial-3.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
 let backgroundUrl4 = 'url(/be/commercial-4.webp)' // Define image for Slot-HeroFullscreen and then call BackgroundURL in Section
 
+import Testimonials from '../../components/home/Section-Testimonials.astro';
+
 
 import Partners from "../../components/home/Section-Partners.astro";
 
@@ -130,23 +132,10 @@ import Layout from '../../layouts/Layout.astro';
     </SectionHeadSecImg>
 
 
-
+  
+        
     <div id="contain" class="mx-auto flex flex-col lg:flex-row my-24">
-      <div class="w-full lg:w-1/2 my-4">
-        <a href="/contact">  
-          <BlogPost>
-            <Fragment slot="smltitle">
-              Partner Product
-            </Fragment>
-            <Fragment slot="title">
-              Clevertronics Access Control
-            </Fragment>
-            <Fragment slot="desc">
-              Clevertronics are market leading specialists in emergency exit lighting and automated monitoring. We are partnered to install their products proffesionally.
-            </Fragment>
-          </BlogPost>
-        </a>
-      </div>
+    
       <div class="w-full lg:w-1/2 my-4">
         <a href="/contact">  
           <BlogPost>
@@ -162,10 +151,18 @@ import Layout from '../../layouts/Layout.astro';
           </BlogPost>
         </a>
       </div>
+      <div class="w-full lg:w-1/2 my-4">
+        <div class="video-wrap">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yScAFtQoero?si=MZwTb-e_eYk7NG5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </div>
 
-
   <Cta />
+
+  <Testimonials />
 
   <Faqs />
 

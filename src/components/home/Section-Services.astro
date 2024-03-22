@@ -43,10 +43,10 @@ const stats = [
     link: 'services/access',
   },
   {
-    name: 'Air Conditioning ',
-    desc: 'Urgent air conditioning repairs and installations to keep the house cool, cost-effectively.',
+    name: 'Short Range Call System',
+    desc: 'The SRCS by Cura1 is a cutting-edge system for silent alarms in schools and shopping centres.',
     value: 'Music Event Web Design & Marketing',
-    link: '#faq',
+    link: 'https://www.cura1.com/products/centercall/',
   },
   {
     name: 'Servicing & Maintenance',
@@ -71,7 +71,7 @@ const stats = [
           stats.map((stat) => (
           <a href={stat.link}>  
             <div class="border-primary-900/10 dark:border-primary-300/10 bg-slate-100 dark:bg-slate-900 duration-200 hover:bg-slate-200 rounded-sm border px-4 md:px-6 py-8 sm:py-12 h-full flex flex-col justify-start gap-4">
-              <dt class="hidden text-xs uppercase font-thin tracking-widest">{stat.value}</dt>
+              
               <dd class="text-slate-950 dark:text-primary-100 text-lg xs:text-xl lg:text-2xl font-medium leading-loose tracking-tighter xs:tracking-tight">{stat.name}</dd>
               <p class="hidden lg:block max-w-lg text-base leading-6">
                     {stat.desc}
