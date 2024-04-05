@@ -18,6 +18,12 @@ const { description, title } = Astro.props;
 const canonicalURL = Astro.props.canonicalURL || new URL(Astro.url.pathname, Astro.site);
 ---
 
+<style>
+  body {
+    display: none !important;
+  }
+</style>
+
 <!DOCTYPE html>
 <html lang="en" x-cloak x-data :class="{ 'dark': $store.theme.isDark }">
   <head>
